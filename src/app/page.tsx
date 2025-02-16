@@ -153,9 +153,9 @@ export default function Home() {
 
           {/* Paragraph */}
           <p className="px-0 sm:px-[50px] md:px-[100px] text-[16px] sm:text-[18px] md:text-[20px] text-center mt-4">
-            It's easy to fund your trading account using one of the following
+            Its easy to fund your trading account using one of the following
             payment methods. Pick the payment option that works best for you,
-            whether it’s debit card, bank wire transfer, or ACH deposit.
+            whether its debit card, bank wire transfer, or ACH deposit.
           </p>
 
           {/* Image Grid */}
@@ -193,7 +193,7 @@ export default function Home() {
               alt="PlatformTrading"
               className="w-full h-auto object-cover"
               quality={100} // Increase quality (default is 75)
-              priority // Optional: Preload the image if it's above the fold
+              priority 
               sizes="(max-width: 768px) 100vw, 1200px" // Responsive sizes
             />
           </div>
