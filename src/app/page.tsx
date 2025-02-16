@@ -1,10 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import EurUsd from "../assets/Eur_Usd.png";
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import BoxTrad from "@/components/BoxTrad";
 import imgHome01 from "../assets/home01.jpg";
-import visa from "../assets/visa-logo.svg";
 import masterCard from "../assets/mastercard-logo (1).svg";
 import wize from "../assets/wiretransfer-logo.svg";
 import paypal from "../assets/paypal-logo.svg";
