@@ -93,10 +93,10 @@ export default function Home() {
           </h1>
           <p className="text-[16px] md:text-[20px]">
             Trading forex is one of the most popular trading options. This is
-            why you’ll need a cutting-edge and reliable trading platform that
+            why you ll need a cutting-edge and reliable trading platform that
             allows you to trade tight spreads on major and minor currency pairs.
             Choose from our standard or premium forex pricing modules -
-            whatever’s best for, your forex trading needs.
+            whatever s best for, your forex trading needs.
           </p>
           <Button className="font-[550] h-11 w-18 text-[16px] my-3 bg-main-bg">
             Contact US

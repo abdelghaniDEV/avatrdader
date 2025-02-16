@@ -62,7 +62,7 @@ const ResponsiveNavbar = () => {
               exit="closed"
               variants={menuVariants}
               transition={{ duration: 0.3 }}
-              className="flex gap-4 flex-co items-center text-[16px] absolute md:static top-10 border-t-[1px] left-0 bg-white md:bg-transparent w-full md:w-auto z-10 p-4 md:p-0 shadow-lg md:shadow-none"
+              className="flex gap-4 flex-col items-center text-[16px] absolute md:static top-10 border-t-[1px] left-0 bg-white md:bg-transparent w-full md:w-auto z-10 p-4 md:p-0 shadow-lg md:shadow-none"
             >
               <li onClick={() => setIsMenuOpen(false)}>Products</li>
               <li onClick={() => setIsMenuOpen(false)}>Academy</li>
