@@ -20,6 +20,22 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon-32x32.png", // Path to your favicon
   },
+  openGraph: {
+    title: "Al Ansari-Exchange",
+    description:
+      "The Best Online Forex Trading Experience! ⭐ Trade Forex, Stocks, Commodities, Cryptos & Stock Market Indices with Al Ansari-Exchange's ✅ Award-Winning Platforms",
+    url: "https://avatrdader.vercel.app", // Replace with your actual URL
+    siteName: "Al Ansari-Exchange",
+    // images: [
+    //   {
+    //     url: "/og-image.jpg", // Replace with an actual image path
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "Al Ansari-Exchange",
+    //   },
+    // ],
+    type: "website",
+  },
 };
 
 
