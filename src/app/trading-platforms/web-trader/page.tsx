@@ -143,7 +143,7 @@ export default function page() {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center">
             AvaTrade: Trade with Confidence
           </h1>
-          <div className="flex items-center gap- justify-evenly py-8">
+          <div className="flex flex-col md:flex-wrap gap-5 items-center gap- md:justify-evenly py-8">
             <div className="flex-col flex items-center justify-center gap-2 bg-white w-[220px] border-main-primary border-[1.5px] rounded-[10px] p-2">
               <div className="bg-main-primary p-2 rounded-full ">
                 <LockKeyhole className="w-[40px] h-[40px]  text-white " />

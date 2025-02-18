@@ -3,7 +3,7 @@ import Image from "next/image";
 import imgHome01 from "../assets/home01.jpg";
 
 import BoxFeta from "@/components/boxFeta";
-import PlatformTrading from "../assets/fx-at-hero-mt4.avif";
+import PlatformTrading from "../assets/fx-at-hero-mt4.jpg";
 import aword01 from "../assets/Outstanding-Regulated-Broker-_-Cfi.co-1.png";
 export default function Home() {
   return (
