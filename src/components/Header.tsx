@@ -10,7 +10,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
@@ -42,9 +41,9 @@ const ResponsiveNavbar = () => {
       <div className="bg-main-primary py-1 text-white">
         <div className="flex items-center justify-center md:justify-between container">
           {/* Logo */}
-          <div className="w-[130px] md:w-[200px]">
+          <Link href={'/'} className="w-[130px] md:w-[200px]">
             <Image src={Logo} alt="LOGO" className="object-cover" />
-          </div>
+          </Link>
 
           {/* Help and Language */}
           <div className="hidden md:block">
@@ -144,13 +143,13 @@ const ResponsiveNavbar = () => {
               </li>
 
               <li onClick={() => setIsMenuOpen(false)}>
-                <Link href={'/cryptocurrencies'}>Cryptocurrencies</Link>
+                <Link href={"/cryptocurrencies"}>Cryptocurrencies</Link>
               </li>
               <li onClick={() => setIsMenuOpen(false)}>
-                <Link href={'/trading-info'}>Trading Info</Link>
+                <Link href={"/trading-info"}>Trading Info</Link>
               </li>
               <li onClick={() => setIsMenuOpen(false)}>
-                <Link href={'/about'}>About Us</Link>
+                <Link href={"/about"}>About Us</Link>
               </li>
             </motion.ul>
           )}
