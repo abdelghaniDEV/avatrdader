@@ -26,15 +26,7 @@ export const metadata: Metadata = {
       "The Best Online Forex Trading Experience! ⭐ Trade Forex, Stocks, Commodities, Cryptos & Stock Market Indices with Al Ansari-Exchange's ✅ Award-Winning Platforms",
     url: "https://avatrdader.vercel.app", // Replace with your actual URL
     siteName: "Al Ansari-Exchange",
-    // images: [
-    //   {
-    //     url: "/og-image.jpg", // Replace with an actual image path
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Al Ansari-Exchange",
-    //   },
-    // ],
-    type: "website",
+    
   },
 };
 
