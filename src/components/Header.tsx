@@ -1,11 +1,20 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "./ui/button";
 import { Menu, UserCircle } from "lucide-react";
-import Logo from "../assets/Al-Ansari-Exchange-Logo.png"
+import Logo from "../assets/Al-Ansari-Exchange-Logo.png";
 import Image from "next/image";
 import Navbar from "./Navbar";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import Link from "next/link";
 
 const ResponsiveNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,14 +73,86 @@ const ResponsiveNavbar = () => {
               transition={{ duration: 0.3 }}
               className="flex gap-4 flex-col items-center text-[16px] absolute md:static top-10 border-t-[1px] left-0 bg-white md:bg-transparent w-full md:w-auto z-10 p-4 md:p-0 shadow-lg md:shadow-none"
             >
-              <li onClick={() => setIsMenuOpen(false)}>Products</li>
-              <li onClick={() => setIsMenuOpen(false)}>Academy</li>
-              <li onClick={() => setIsMenuOpen(false)}>Trading Platforms</li>
-              <li onClick={() => setIsMenuOpen(false)}>Cryptocurrencies</li>
-              <li onClick={() => setIsMenuOpen(false)}>Trading Info</li>
-              <li onClick={() => setIsMenuOpen(false)}>Education</li>
-              <li onClick={() => setIsMenuOpen(false)}>Partners</li>
-              <li onClick={() => setIsMenuOpen(false)}>About Us</li>
+              {/* Products Dropdown */}
+              <li>
+                <DropdownMenu>
+                  <DropdownMenuTrigger className="focus:outline-none">
+                    Products
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuItem>
+                      <Link
+                        href="/products/forex"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Forex
+                      </Link>
+                    </DropdownMenuItem>
+
+                    <DropdownMenuItem>
+                      <Link
+                        href="/products/cfd-trading"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Cfd Trading
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link
+                        href="/products/stocks"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Stocks
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </li>
+
+              {/* Trading Platforms Dropdown */}
+              <li>
+                <DropdownMenu>
+                  <DropdownMenuTrigger className="focus:outline-none">
+                    Trading Platforms
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuItem>
+                      <Link
+                        href="/trading-platforms/metatrader-4"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        MetaTrader 4 (MT4)
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link
+                        href="/trading-platforms/metatrader-5"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        MetaTrader 5 (MT5)
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link
+                        href="/trading-platform/web-trader"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Web Trader
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </li>
+
+              <li onClick={() => setIsMenuOpen(false)}>
+                <Link href={'/cryptocurrencies'}>Cryptocurrencies</Link>
+              </li>
+              <li onClick={() => setIsMenuOpen(false)}>
+                <Link href={'/trading-info'}>Trading Info</Link>
+              </li>
+              <li onClick={() => setIsMenuOpen(false)}>
+                <Link href={'/about'}>About Us</Link>
+              </li>
             </motion.ul>
           )}
         </AnimatePresence>

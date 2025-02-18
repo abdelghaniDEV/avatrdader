@@ -1,12 +1,10 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import imgHome01 from "../assets/home01.jpg";
-import masterCard from "../assets/mastercard-logo (1).svg";
-import wize from "../assets/wiretransfer-logo.svg";
-import paypal from "../assets/paypal-logo.svg";
-import scril from "../assets/scrill-logo.svg";
+
 import BoxFeta from "@/components/boxFeta";
 import PlatformTrading from "../assets/fx-at-hero-mt4.avif";
+import aword01 from "../assets/Outstanding-Regulated-Broker-_-Cfi.co-1.png";
 export default function Home() {
   return (
     <div className="">
@@ -95,17 +93,17 @@ export default function Home() {
             Trading forex is one of the most popular trading options. This is
             why you ll need a cutting-edge and reliable trading platform that
             allows you to trade tight spreads on major and minor currency pairs.
-            Choose from our standard or premium forex pricing modules -
-            whatever s best for, your forex trading needs.
+            Choose from our standard or premium forex pricing modules - whatever
+            s best for, your forex trading needs.
           </p>
-          <Button className="font-[550] h-11 w-18 text-[16px] my-3 bg-main-bg">
-            Contact US
-          </Button>
-          <p className="text-[14px] md:text-[16px]">
-            Margin requirement will depend on the amount of leverage allowed.
-            The maximum leverage allowed is determined by the regulators and may
-            differ depending upon the instrument.
-          </p>
+          <div className="flex gap-10 items-center">
+            <Button className="font-[550] h-11 w-18 text-[16px] my-3 bg-main-bg">
+              Contact US
+            </Button>
+            <div className="w-[100px]">
+               <Image src={aword01} alt='aword' />
+            </div>
+          </div>
         </div>
       </div>
       <div className="bg-[url(/baner.webp)] bg-cover w-full h-[400px] container sm:h-[400px] md:h-[450px]">
@@ -159,25 +157,7 @@ export default function Home() {
           </p>
 
           {/* Image Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 items-center sm:gap-20 pt-6">
-           
-            <div className="w-[100px] sm:w-[150px] mx-auto">
-              <Image
-                src={masterCard}
-                alt="mastercard"
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="w-[100px] sm:w-[150px] mx-auto">
-              <Image src={wize} alt="wize" className="w-full h-auto" />
-            </div>
-            <div className="w-[100px] sm:w-[150px] mx-auto">
-              <Image src={paypal} alt="wize" className="w-full h-auto" />
-            </div>
-            <div className="w-[100px] sm:w-[150px] mx-auto">
-              <Image src={scril} alt="wize" className="w-full h-auto" />
-            </div>
-          </div>
+          
         </div>
       </div>
       <div className="bg w-full grid grid-cols-1 md:grid-cols-3 items-center bg-main-primary container text-white py-8 mb-10">
@@ -186,29 +166,27 @@ export default function Home() {
           <span className="text-main-bg">You Can Trust</span>
         </h1>
 
-       
-          <div className="w-full">
-            <Image
-              src={PlatformTrading}
-              alt="PlatformTrading"
-              className="w-full h-auto object-cover"
-              quality={100} // Increase quality (default is 75)
-              priority 
-              sizes="(max-width: 768px) 100vw, 1200px" // Responsive sizes
-            />
+        <div className="w-full">
+          <Image
+            src={PlatformTrading}
+            alt="PlatformTrading"
+            className="w-full h-auto object-cover"
+            quality={100} // Increase quality (default is 75)
+            priority
+            sizes="(max-width: 768px) 100vw, 1200px" // Responsive sizes
+          />
+        </div>
+        <div>
+          <p className="text-center py-5 md:text-[20px]">
+            Experience a range of powerful mobile platforms tailored for traders
+            at all levels on your mobile device
+          </p>
+          <div className="flex items-center justify-center gap-6 container">
+            <Button className="font-[550] h-11 w- md:w-auto text-[16px] bg-main-bg">
+              Register New
+            </Button>
           </div>
-          <div>
-            <p className="text-center py-5 md:text-[20px]">
-              Experience a range of powerful mobile platforms tailored for
-              traders at all levels on your mobile device
-            </p>
-            <div className="flex items-center justify-center gap-6 container">
-              <Button className="font-[550] h-11 w- md:w-auto text-[16px] bg-main-bg">
-                Register New
-              </Button>
-            </div>
-          </div>
-       
+        </div>
       </div>
     </div>
   );
