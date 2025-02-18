@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import {
-  BadgeCheck,
+ 
   ChevronRight,
-  Dot,
-  MousePointer,
-  Pointer,
+  
 } from "lucide-react";
 import Link from "next/link";
 import React from "react";

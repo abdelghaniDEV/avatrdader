@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import {
-  BadgeCheck,
+ 
   ChevronRight,
-  Dot,
-  MousePointer,
-  Pointer,
+ 
 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -116,16 +114,16 @@ export default function forex() {
         </h1>
         <p className="text-base md:text-[20px] leading-relaxed md:leading-[30px]">
           The FX Market, a.k.a. the Foreign Exchange Market, is a decentralised
-          exchange where all the world's currencies are actively traded. While
+          exchange where all the world&apos;s currencies are actively traded. While
           other markets have a centralised location, FX trading takes place
           electronically, anywhere and everywhere. Did you know that trading
-          takes place 24 hours a day? As the world's most liquid market, forex
+          takes place 24 hours a day? As the world&apos;s most liquid market, forex
           trading volumes have topped $6.6 trillion daily (2019 figures), with
           rising numbers of forex traders entering the scene. Such is the size
           and scope of the forex markets that it dwarfs all other major markets
           combined. We invite you to learn more about Forex Trading with our and
           guides. Global currency trading activity is off the charts, and FX
-          trading confers many benefits to you. As you're about to find out,
+          trading confers many benefits to you. As you&apos;re about to find out,
           forex presents incredible trading opportunities, and AvaTrade is ready
           to reveal it all to you. Open today a forex trading account and start!
         </p>

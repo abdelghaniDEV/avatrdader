@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import {
-  BadgeCheck,
+ 
   ChevronRight,
-  Dot,
-  MousePointer,
-  Pointer,
+  
 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -66,7 +64,7 @@ export default function forex() {
               dynamic way to participate in the financial markets without owning
               the actual assets. CFD trading is about making bold predictions on
               price changes, offering a unique adventure into the world of
-              finance that's accessible to everyone. Dive in and experience the
+              finance that&apos;s accessible to everyone. Dive in and experience the
               thrill of the market at your fingertips!
             </p>
             <div>
