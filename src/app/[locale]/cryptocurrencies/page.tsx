@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import cryptoImg01 from "@/assets/cryptoimage.jpg";
 import { useTranslations } from "next-intl";
 
-export default function page() {
+export default function Crypto() {
   const t = useTranslations("crypto");
   return (
     <div>
