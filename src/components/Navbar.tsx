@@ -7,24 +7,27 @@ import {
 } from "@/components/ui/hover-card";
 import { useTranslations } from "next-intl";
 import {Link} from '@/i18n/routing';
+import { ChevronDown } from "lucide-react";
 
 export default function Navbar() {
   const t = useTranslations("header");
   return (
     <div className="hidden md:block">
       <ul className="flex items-center gap-6">
-      <Link href={"/"} className="hover:text-main-primary">
+      <Link href={"/"} className="hover:text-main-primary ">
           {t("home")}
         </Link>
         <li>
           <HoverCard>
-            <HoverCardTrigger className="cu cursor-pointer hover:text-main-primary">
+            <HoverCardTrigger className="cu cursor-pointer hover:text-main-primary flex items-end gap-2">
               {t("products")}
+              <ChevronDown />
             </HoverCardTrigger>
             <HoverCardContent className="mt-4 mx-4">
               <div className="flex flex-col gap-2 font-[700] uppercase">
                 <Link href={"/products/forex"} className="hover:text-main-bg">
                   {t("forex")}
+                 
                 </Link>
                 <Link
                   href={"/products/cfd-trading"}
@@ -41,8 +44,8 @@ export default function Navbar() {
         </li>
         <li>
           <HoverCard>
-            <HoverCardTrigger className="cu cursor-pointer hover:text-main-primary">
-              {t("trading_platforms")}
+            <HoverCardTrigger className="cu cursor-pointer hover:text-main-primary flex items-center gap-2">
+              {t("trading_platforms")} <ChevronDown />
             </HoverCardTrigger>
             <HoverCardContent className="mt-4">
               <div className="flex flex-col gap-2 font-[700] uppercase">

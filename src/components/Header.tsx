@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "./ui/button";
-import { Menu, UserCircle } from "lucide-react";
+import { ChevronDown, Menu, UserCircle } from "lucide-react";
 import Logo from "../assets/Al-Ansari-Exchange-Logo.png";
 import Image from "next/image";
 import Navbar from "./Navbar";
@@ -97,8 +97,9 @@ const ResponsiveNavbar = () => {
               {/* Products Dropdown */}
               <li>
                 <DropdownMenu>
-                  <DropdownMenuTrigger className="focus:outline-none">
+                  <DropdownMenuTrigger className="focus:outline-none flex items-center gap-2">
                     {t("products")}
+                    <ChevronDown />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuItem>
@@ -132,8 +133,9 @@ const ResponsiveNavbar = () => {
               {/* Trading Platforms Dropdown */}
               <li>
                 <DropdownMenu>
-                  <DropdownMenuTrigger className="focus:outline-none">
+                  <DropdownMenuTrigger className="focus:outline-none flex items-center gap-2">
                     {t("trading_platforms")}
+                    <ChevronDown />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuItem>
@@ -174,8 +176,9 @@ const ResponsiveNavbar = () => {
                 <Link href={"/about"}>{t("about_us")}</Link>
               </li>
               <DropdownMenu>
-                <DropdownMenuTrigger className="focus:outline-none">
+                <DropdownMenuTrigger className="focus:outline-none flex items-center gap-2">
                   {t("language")}
+                  <ChevronDown />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                   <DropdownMenuItem
