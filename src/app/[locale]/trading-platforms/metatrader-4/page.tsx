@@ -3,9 +3,8 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { useTranslations, useLocale } from "next-intl";
-import { text } from "stream/consumers";
 
-export default function page() {
+export default function Mt4() {
   const t = useTranslations("mt4");
   const locale = useLocale();
   return (

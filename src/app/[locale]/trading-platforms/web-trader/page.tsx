@@ -8,7 +8,7 @@ import tradingview02 from "@/assets/tradingview02.webp";
 import tradingview03 from "@/assets/tradingview03.png";
 import { useTranslations, useLocale } from "next-intl";
 
-export default function page() {
+export default function WebTrader() {
   const t = useTranslations("web_trader");
   const locale = useLocale();
   return (

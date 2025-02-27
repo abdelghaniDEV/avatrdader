@@ -13,13 +13,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 
 const ResponsiveNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations("header");
-  const locale = useLocale();
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };

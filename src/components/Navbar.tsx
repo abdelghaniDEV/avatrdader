@@ -5,7 +5,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import {Link} from '@/i18n/routing';
 
 export default function Navbar() {

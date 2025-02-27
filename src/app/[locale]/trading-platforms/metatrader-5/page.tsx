@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { useTranslations, useLocale } from "next-intl";
 
-export default function page() {
+export default function Mt5() {
   const t = useTranslations("mt5");
   const locale = useLocale();
   return (

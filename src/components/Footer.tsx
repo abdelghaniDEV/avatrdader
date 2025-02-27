@@ -9,12 +9,11 @@ import aword04 from "../assets/award-footer-4.png";
 import aword05 from "../assets/award-footer-5.png";
 import aword06 from "../assets/award-footer-6.png";
 import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const t = useTranslations("footer");
   const th = useTranslations("header")
-  const locale = useLocale();
   return (
     <div className="">
       <div className="py-8">

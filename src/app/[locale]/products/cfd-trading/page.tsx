@@ -6,7 +6,7 @@ import image01 from "@/assets/imag02-forex.jpg";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 
-export default function forex() {
+export default function CfdTrading() {
   const t = useTranslations("cfd_trading");
   const locale = useLocale();
 

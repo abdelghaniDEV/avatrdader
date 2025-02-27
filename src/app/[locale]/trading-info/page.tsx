@@ -7,7 +7,7 @@ import React from "react";
 import tradingInfo from "@/assets/day-trading-de.jpg";
 import { useTranslations, useLocale } from "next-intl";
 
-export default function page() {
+export default function TradingInfo() {
   const t = useTranslations("info");
   const locale = useLocale();
   return (

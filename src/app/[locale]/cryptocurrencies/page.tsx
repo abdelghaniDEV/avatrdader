@@ -5,11 +5,10 @@ import React from "react";
 import cryptoImg from "@/assets/trading-cryptomonnaie.jpg";
 import { Button } from "@/components/ui/button";
 import cryptoImg01 from "@/assets/cryptoimage.jpg";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 
 export default function page() {
   const t = useTranslations("crypto");
-  const locale = useLocale();
   return (
     <div>
       <div className="w-full h-[20vh] xl:h-[35vh] relative bg-[#F3F3F3] bg-[80%] bg-cover ">

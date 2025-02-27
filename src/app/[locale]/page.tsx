@@ -6,14 +6,12 @@ import BoxFeta from "@/components/boxFeta";
 import PlatformTrading from "@/assets/fx-at-hero-mt4.jpg";
 import aword01 from "@/assets/Outstanding-Regulated-Broker-_-Cfi.co-1.png";
 import { useTranslations, useLocale } from "next-intl";
-import { Link } from "@/i18n/routing";
-import { text } from "stream/consumers";
 
 export default function Home() {
   const t = useTranslations("home");
   const locale = useLocale();
 
-  const direction = locale === "ar" ? "rtl" : "ltr";
+
 
   return (
     <div
