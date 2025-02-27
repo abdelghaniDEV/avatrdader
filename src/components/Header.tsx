@@ -12,7 +12,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import Link from "next/link";
+import {Link} from '@/i18n/routing';
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/routing";
 
@@ -74,19 +74,7 @@ const ResponsiveNavbar = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
 
-              {/* <li
-                onClick={() => changeLanguage("en")}
-                className="curs- cursor-pointer"
-              >
-                english
-              </li>
-              <li
-                onClick={() => changeLanguage("ar")}
-                className="curs- cursor-pointer"
-              >
-                arabic
-              </li> */}
-              {/* <li>{t("language")}</li> */}
+             
             </ul>
           </div>
         </div>
@@ -224,21 +212,17 @@ const ResponsiveNavbar = () => {
             className="w-[30px] h-[30px] cursor-pointer"
             onClick={toggleMenu}
           />
-         
+
           <DropdownMenu>
             <DropdownMenuTrigger className="focus:outline-none">
-            <UserCircle className="w-[30px] h-[30px]" />
+              <UserCircle className="w-[30px] h-[30px]" />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="mx-4">
-              <DropdownMenuItem
-                className="font-[500] h-8 bg-main-bg cursor-pointer"
-              >
+              <DropdownMenuItem className="font-[500] h-8 bg-main-bg cursor-pointer">
                 {t("register")}
               </DropdownMenuItem>
-              <DropdownMenuItem
-                className="bg-inherit text-main-primary font-[600] cursor-pointer"
-              >
-                 {t("login")}
+              <DropdownMenuItem className="bg-inherit text-main-primary font-[600] cursor-pointer">
+                {t("login")}
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
