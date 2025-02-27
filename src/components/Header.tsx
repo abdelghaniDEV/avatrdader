@@ -229,7 +229,7 @@ const ResponsiveNavbar = () => {
             <DropdownMenuTrigger className="focus:outline-none">
             <UserCircle className="w-[30px] h-[30px]" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="m-4">
+            <DropdownMenuContent className="mx-4">
               <DropdownMenuItem
                 className="font-[500] h-8 bg-main-bg cursor-pointer"
               >
