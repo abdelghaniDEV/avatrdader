@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/Al-Ansari-Exchange-Logo.png";
-import { Facebook, FacebookIcon, Instagram, Linkedin, Mail, Phone, Twitter } from "lucide-react";
+import { Facebook, Instagram, Mail, Phone, Twitter } from "lucide-react";
 import Image from "next/image";
 import aword01 from "../assets/award-footer-2.png";
 import aword02 from "../assets/award-footer-1.png";
