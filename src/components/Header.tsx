@@ -80,7 +80,7 @@ const ResponsiveNavbar = () => {
       </div>
 
       {/* Navigation and Buttons */}
-      <div className="container md:flex items-center justify-between py-2 relative">
+      <div className="container lg:flex items-center justify-between py-2 relative">
         <Navbar />
         {/* Navigation Links */}
         <AnimatePresence>
@@ -199,7 +199,7 @@ const ResponsiveNavbar = () => {
         </AnimatePresence>
 
         {/* Login and Register Buttons */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden  items-center gap-1">
           <Button className="bg-inherit text-main-primary font-[600]">
             {t("login")}
           </Button>
@@ -209,13 +209,13 @@ const ResponsiveNavbar = () => {
         </div>
 
         {/* Mobile Menu and User Icon */}
-        <div className="flex items-center justify-between gap-2 md:hidden ">
+        <div className="flex items-center justify-between lg:hidden ">
           <Menu
-            className="w-[30px] h-[30px] cursor-pointer md:hidden"
+            className="w-[30px] h-[30px] cursor-pointer "
             onClick={toggleMenu}
           />
 
-          <div className="md:hidden">
+          <div className="">
             <DropdownMenu>
               <DropdownMenuTrigger className="focus:outline-none">
                 <UserCircle className="w-[30px] h-[30px]" />
