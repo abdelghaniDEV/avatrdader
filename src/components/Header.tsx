@@ -14,8 +14,10 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useRouter } from "@/i18n/routing";
 
 const ResponsiveNavbar = () => {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations("header");
   const toggleMenu = () => {
@@ -25,7 +27,10 @@ const ResponsiveNavbar = () => {
   // Animation variants for the mobile menu
   const menuVariants = {
     open: { opacity: 1, x: 0 },
-    
+  };
+
+  const changeLanguage = (locale: string) => {
+    router.push("/", { locale }); // تغيير اللغة وإعادة التوجيه إلى الصفحة الرئيسية
   };
 
   return (
@@ -49,7 +54,39 @@ const ResponsiveNavbar = () => {
               <li>|</li>
               <li>{t("help")}</li>
               <li>|</li>
-              <li>{t("language")}</li>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="focus:outline-none">
+                  {t("language")}
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuItem
+                    onClick={() => changeLanguage("en")}
+                    className="curs cursor-pointer"
+                  >
+                    English
+                  </DropdownMenuItem>
+                  <DropdownMenuItem
+                    onClick={() => changeLanguage("ar")}
+                    className="curs cursor-pointer"
+                  >
+                    Arabic
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+
+              {/* <li
+                onClick={() => changeLanguage("en")}
+                className="curs- cursor-pointer"
+              >
+                english
+              </li>
+              <li
+                onClick={() => changeLanguage("ar")}
+                className="curs- cursor-pointer"
+              >
+                arabic
+              </li> */}
+              {/* <li>{t("language")}</li> */}
             </ul>
           </div>
         </div>
@@ -77,17 +114,26 @@ const ResponsiveNavbar = () => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuItem>
-                      <Link href="/products/forex" onClick={() => setIsMenuOpen(false)}>
+                      <Link
+                        href="/products/forex"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
                         {t("forex")}
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                      <Link href="/products/cfd-trading" onClick={() => setIsMenuOpen(false)}>
+                      <Link
+                        href="/products/cfd-trading"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
                         {t("cfd_trading")}
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                      <Link href="/products/stocks" onClick={() => setIsMenuOpen(false)}>
+                      <Link
+                        href="/products/stocks"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
                         {t("stocks")}
                       </Link>
                     </DropdownMenuItem>
@@ -103,17 +149,26 @@ const ResponsiveNavbar = () => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuItem>
-                      <Link href="/trading-platforms/metatrader-4" onClick={() => setIsMenuOpen(false)}>
+                      <Link
+                        href="/trading-platforms/metatrader-4"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
                         {t("mt4")}
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                      <Link href="/trading-platforms/metatrader-5" onClick={() => setIsMenuOpen(false)}>
+                      <Link
+                        href="/trading-platforms/metatrader-5"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
                         {t("mt5")}
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                      <Link href="/trading-platform/web-trader" onClick={() => setIsMenuOpen(false)}>
+                      <Link
+                        href="/trading-platform/web-trader"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
                         {t("web_trader")}
                       </Link>
                     </DropdownMenuItem>
@@ -130,13 +185,34 @@ const ResponsiveNavbar = () => {
               <li onClick={() => setIsMenuOpen(false)}>
                 <Link href={"/about"}>{t("about_us")}</Link>
               </li>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="focus:outline-none">
+                  {t("language")}
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuItem
+                    onClick={() => changeLanguage("en")}
+                    className="curs cursor-pointer"
+                  >
+                    English
+                  </DropdownMenuItem>
+                  <DropdownMenuItem
+                    onClick={() => changeLanguage("ar")}
+                    className="curs cursor-pointer"
+                  >
+                    Arabic
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </motion.ul>
           )}
         </AnimatePresence>
 
         {/* Login and Register Buttons */}
         <div className="hidden md:flex items-center gap-1">
-          <Button className="bg-inherit text-main-primary font-[600]">{t("login")}</Button>
+          <Button className="bg-inherit text-main-primary font-[600]">
+            {t("login")}
+          </Button>
           <Button className="font-[500] h-8 bg-main-bg">
             <span>{t("register")}</span>
           </Button>
@@ -144,8 +220,28 @@ const ResponsiveNavbar = () => {
 
         {/* Mobile Menu and User Icon */}
         <div className="flex items-center justify-between gap-2 md:hidden">
-          <Menu className="w-[30px] h-[30px] cursor-pointer" onClick={toggleMenu} />
-          <UserCircle className="w-[30px] h-[30px]" />
+          <Menu
+            className="w-[30px] h-[30px] cursor-pointer"
+            onClick={toggleMenu}
+          />
+         
+          <DropdownMenu>
+            <DropdownMenuTrigger className="focus:outline-none">
+            <UserCircle className="w-[30px] h-[30px]" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="m-4">
+              <DropdownMenuItem
+                className="font-[500] h-8 bg-main-bg cursor-pointer"
+              >
+                {t("register")}
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                className="bg-inherit text-main-primary font-[600] cursor-pointer"
+              >
+                 {t("login")}
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </div>
