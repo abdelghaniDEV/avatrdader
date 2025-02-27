@@ -1,37 +1,61 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import imgHome01 from "../assets/home01.jpg";
+import imgHome01 from "@/assets/home01.jpg";
 
 import BoxFeta from "@/components/boxFeta";
-import PlatformTrading from "../assets/fx-at-hero-mt4.jpg";
-import aword01 from "../assets/Outstanding-Regulated-Broker-_-Cfi.co-1.png";
+import PlatformTrading from "@/assets/fx-at-hero-mt4.jpg";
+import aword01 from "@/assets/Outstanding-Regulated-Broker-_-Cfi.co-1.png";
+import { useTranslations, useLocale } from "next-intl";
+import { Link } from "@/i18n/routing";
+import { text } from "stream/consumers";
+
 export default function Home() {
+  const t = useTranslations("home");
+  const locale = useLocale();
+
+  const direction = locale === "ar" ? "rtl" : "ltr";
+
   return (
-    <div className="">
+    <div
+      className={`${locale === "ar" ? "text-right" : "text-left"}`}
+      style={{
+        textAlign: locale === "ar" ? "right" : "left",
+      }}
+    >
       {/* hero */}
-      <div className="bg-[url(/Hero01.webp)] bg-cover w-full h-[480px] md:h-[600px] lg:h-[700px]">
-        <div className="flex  items-center justify-start pt-[40px] md:pt-[60px]  px-4 md:px-0">
+      <div
+        className={`${
+          locale === "ar" ? "bg-custom-gradient" : "bg-[url(/Hero01.webp)]"
+        } bg-cover w-full h-[480px]  md:h-[500px] lg:h-[500px]  `}
+        // style={{
+        //   backgroundPosition: locale === "ar" ? "right" : "left",
+        // }}
+      >
+        <div className="flex  items-center  justify-start pt-[40px] md:pt-[60px]  md:px-0">
           {/* Text Content */}
-          <div className="w-full md:w-[700px] flex flex-col gap-4 text-white text-center container md:text-left">
+          <div
+            className="w-full md:w-[700px] flex flex-col gap-4 text-white text-center container md:text-left"
+            style={{
+              textAlign: locale === "ar" ? "right" : "left",
+            }}
+          >
             {/* Heading */}
-            <h1 className="text-[36px] leading-[40px] md:text-[50px] md:leading-[50px] lg:text-[60px] lg:leading-[60px] font-[600]">
-              Welcome to Al Ansari Exchange – Trade Smarter, Trade Faster
+            <h1 className="text-[36px] leading-[40px] md:text-[50px]  md:leading-[50px] lg:text-[60px] lg:leading-[60px] font-[600]">
+              {t("hero_title")}
             </h1>
 
             {/* Paragraph */}
             <p className="text-[16px] md:text-[18px] lg:text-[20px]">
-              Be empowered to trade CFDs on FX, Stocks, Commodities, Crypto,
-              Indices, & Options. Get advanced tools, personalised support,
-              uncompromising security.
+              {t("hero_text")}
             </p>
 
             {/* Buttons */}
             <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
               <Button className="font-[550] h-11 w-full md:w-auto text-[16px] bg-main-bg">
-                Register New
+                {t("register_now")}
               </Button>
               <Button className="font-[500] h-12 w-full md:w-auto text-[16px] bg-inherit text-[#7e868e] border border-[#7e868e]">
-                Free Demo
+                {t("free_demo")}
               </Button>
             </div>
           </div>
@@ -40,35 +64,17 @@ export default function Home() {
       <div className="bg-white py-6 md:py-10 my-10   md:px-0">
         {/* Heading */}
         <h1 className="text-center text-[24px] md:text-[30px] font-[600] pb-5">
-          Trade a Wide Range of Global Markets with Competitive Spreads
+          {t("markets_title")}
         </h1>
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container">
-          <BoxFeta
-            title="Forex"
-            text="Trade major currency pairs with tight spreads starting from 0.0 pips and ultra-low commissions."
-          />
-          <BoxFeta
-            title="Indices"
-            text="Access global indices like UK 100 and Germany 40, with spreads as low as 1 point."
-          />
-          <BoxFeta
-            title="Commodities"
-            text="Trade gold, oil, and more with competitive spreads starting from just 0.04 points."
-          />
-          <BoxFeta
-            title="Stocks"
-            text="Trade over 5,500 international stocks, including extended hours on top US shares."
-          />
-          <BoxFeta
-            title="Cryptocurrencies"
-            text="Buy and sell leading cryptos directly—no need for third-party wallets or exchanges."
-          />
-          <BoxFeta
-            title="Bullion"
-            text="Invest in physical gold, silver, and platinum, securing your wealth in precious metals."
-          />
+          <BoxFeta title={t("forex")} text={t("forex_desc")} />
+          <BoxFeta title={t("indices")} text={t("indices_desc")} />
+          <BoxFeta title={t("commodities")} text={t("commodities_desc")} />
+          <BoxFeta title={t("stocks")} text={t("stocks_desc")} />
+          <BoxFeta title={t("cryptos")} text={t("cryptos_desc")} />
+          <BoxFeta title={t("bullion")} text={t("bullion_desc")} />
         </div>
       </div>
       <div className="container grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-10 my-10 md:mb-20 ">
@@ -79,7 +85,9 @@ export default function Home() {
             className="rounded-[10px] w-full h-auto"
           />
           <div
-            className="hidden md:block w-[80px] h-[400px] absolute top-[-18px] rounded-[20px] left-[-50px] z-[-1]"
+            className={`hidden md:block w-[80px] h-[400px] absolute top-[-18px] rounded-[20px] ${
+              locale === "ar" ? "right-[-50px]" : "left-[-50px]"
+            }  z-[-1]`}
             style={{
               background: "linear-gradient(to right, #12225c, #0e89c8)",
             }}
@@ -87,21 +95,15 @@ export default function Home() {
         </div>
         <div>
           <h1 className="text-[30px] md:text-[40px] font-[700] pb-[10px]">
-            Forex trading
+            {t("trading_title")}
           </h1>
-          <p className="text-[16px] md:text-[20px]">
-            Trading forex is one of the most popular trading options. This is
-            why you ll need a cutting-edge and reliable trading platform that
-            allows you to trade tight spreads on major and minor currency pairs.
-            Choose from our standard or premium forex pricing modules - whatever
-            s best for, your forex trading needs.
-          </p>
+          <p className="text-[16px] md:text-[20px]">{t("trading_text")}</p>
           <div className="flex gap-10 items-center">
             <Button className="font-[550] h-11 w-18 text-[16px] my-3 bg-main-bg">
-              Contact US
+              {t("contact_us")}
             </Button>
             <div className="w-[100px]">
-               <Image src={aword01} alt='aword' />
+              <Image src={aword01} alt="aword" />
             </div>
           </div>
         </div>
@@ -111,22 +113,20 @@ export default function Home() {
           {/* Left Section */}
           <div className="w-full md:w-[600px] flex flex-col gap-4 text-white">
             <h1 className="text-[40px] leading-[40px] sm:text-[50px] sm:leading-[50px] md:text-[60px] md:leading-[50px] font-[600]">
-              Pushing Your Trading Forward
+              {t("pricing_title")}
             </h1>
             <span className="text-[14px] sm:text-[16px]">
               Next-Gen Pricing Model
             </span>
             <p className="text-[16px] sm:text-[18px] md:text-[20px]">
-              Take control of your trading needs with super-tight spreads as low
-              as 0.0 for major currencies with a $5 USD commission per $100k USD
-              traded.
+              {t("pricing_text")}
             </p>
             <span className="text-[14px] sm:text-[16px]">
               Explore the advantages of our RAW Spread pricing.
             </span>
             <div>
               <Button className="font-[550] h-11 w-18 text-[14px] sm:text-[16px] bg-main-bg">
-                Open a RAW Spread Account
+                {t("open_raw_account")}
               </Button>
             </div>
           </div>
@@ -146,24 +146,21 @@ export default function Home() {
         <div className="flex items-center justify-center flex-col">
           {/* Heading */}
           <h1 className="text-[24px] sm:text-[28px] md:text-[30px] font-[600] text-center">
-            Already have a live trading account?
+            {t("funding_title")}
           </h1>
 
           {/* Paragraph */}
           <p className="px-0 sm:px-[50px] md:px-[100px] text-[16px] sm:text-[18px] md:text-[20px] text-center mt-4">
-            Its easy to fund your trading account using one of the following
-            payment methods. Pick the payment option that works best for you,
-            whether its debit card, bank wire transfer, or ACH deposit.
+            {t("funding_text")}
           </p>
 
           {/* Image Grid */}
-          
         </div>
       </div>
       <div className="bg w-full grid grid-cols-1 md:grid-cols-3 items-center bg-main-primary container text-white py-8 mb-10">
         <h1 className="text-center text-[24px] md:text-[30px] leading-[24px] md:leading-[35px] font-[600] pb-5">
-          Powerful Triding Platforms <br />
-          <span className="text-main-bg">You Can Trust</span>
+          {t("platform_title")} <br />
+          <span className="text-main-bg">{t("platform_subtitle")}</span>
         </h1>
 
         <div className="w-full">
@@ -178,12 +175,11 @@ export default function Home() {
         </div>
         <div>
           <p className="text-center py-5 md:text-[20px]">
-            Experience a range of powerful mobile platforms tailored for traders
-            at all levels on your mobile device
+            {t("platform_text")}
           </p>
           <div className="flex items-center justify-center gap-6 container">
             <Button className="font-[550] h-11 w- md:w-auto text-[16px] bg-main-bg">
-              Register New
+              {t("register_now")}
             </Button>
           </div>
         </div>

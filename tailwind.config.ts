@@ -18,10 +18,13 @@ export default {
       },
     },
     extend: {
+      backgroundImage: {
+        "custom-gradient": "linear-gradient(150deg, #ffb81d 0%, #001f60 100%)",
+      },
       colors: {
         main: {
           primary: "#001f60",
-		  bg : "#ffb81d"
+          bg: "#ffb81d",
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

@@ -9,8 +9,12 @@ import aword04 from "../assets/award-footer-4.png";
 import aword05 from "../assets/award-footer-5.png";
 import aword06 from "../assets/award-footer-6.png";
 import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+  const th = useTranslations("header")
+  const locale = useLocale();
   return (
     <div className="">
       <div className="py-8">
@@ -28,59 +32,53 @@ export default function Footer() {
         </div>
       </div>
       <div className="bg-main-primary w-full  text-neutral-400  container py-10">
-        <div className="flex flex-col md:flex-wrap justify-between  gap-[20px] md:gap-[70px] pb-10">
+        <div className="flex flex-col md:flex-row justify-between  gap-[20px] md:gap-[70px] pb-10">
           <div>
             <Image src={logo} alt="logo" className="w-[200px]" />
             <p className="md:w-[500px] pt-5">
-              VA Trade EU Ltd is regulated by the Central Bank of Ireland.
-              (No.C53877) Ava Trade Markets Ltd. is regulated by the B.V.I
-              Financial Services Commission Ava Capital Markets Australia Pty
-              Ltd is regulated by the ASIC No.406684. Ava Capital Markets Pty is
-              regulated by the South African Financial Sector Conduct Authority
-              (FSCA No.45984). Ava Trade Japan K.K. is licensed and regulated in
-              Japan by the Financial Services Agency (License No.: 1662), the
-              Financial Futures Association of Japan (License No.: 1574). Ava
-              Trade Middle East Ltd is regulated by the Abu Dhabi Global Markets
-              (ADGM) Financial Regulatory Services Authority (FRSA) (No.190018).
-              DT Direct Investment Hub Ltd. is regulated by the Cyprus
-              Securities and Exchange Commission (No. 347/17). Read AvaTrade
-              risk disclosure before trading Forex, CFD’s, and/or FX Options.
-              Forex, CFD and FX Options trading involves substantial risk of
-              loss and is not suitable for all investors.
+              {t("text")}
             </p>
           </div>
           <div>
-            <h4 className="pb-4 text-[20px] text-white">Everything you need</h4>
+            <h4 className="pb-4 text-[20px] text-white">{t("need")}</h4>
             <ul className="flex flex-col gap-2">
               <li>
-                 <Link href={'/products/forex'}>Forex</Link>
-              </li>
-              <li><Link href={'/products/cfd-trading'}>Ctf Trading</Link></li>
-              <li>
-                <Link href={'/products/stocks'}>Stocks</Link>
+                <Link href={"/products/forex"}>{th("forex")}</Link>
               </li>
               <li>
-                <Link href={'/about'}>About Us</Link>
-              </li>
-              
-              <li><Link href={'/cryptocurrencies'}>Cryptocurrencies</Link></li>
-              <li>
-                <Link href={'/trading-info'}>Trading Info</Link>
+                <Link href={"/products/cfd-trading"}>{th("cfd_trading")}</Link>
               </li>
               <li>
-                <Link href={'/trading-platforms/metatrader-4'}>MetaTrader 4</Link>
+                <Link href={"/products/stocks"}>{th("stocks")}</Link>
               </li>
               <li>
-                <Link href={'/trading-platforms/metatrader-5'}>MetaTrader 5</Link>
+                <Link href={"/about"}>{th("about_us")}</Link>
+              </li>
+
+              <li>
+                <Link href={"/cryptocurrencies"}>{th("cryptocurrencies")}</Link>
               </li>
               <li>
-                <Link href={'/trading-platforms/web-trader'}>Web Trader</Link>
+                <Link href={"/trading-info"}>{th("trading_info")}</Link>
+              </li>
+              <li>
+                <Link href={"/trading-platforms/metatrader-4"}>
+                  {th("mt4")}
+                </Link>
+              </li>
+              <li>
+                <Link href={"/trading-platforms/metatrader-5"}>
+                {th("mt5")}
+                </Link>
+              </li>
+              <li>
+                <Link href={"/trading-platforms/web-trader"}>{th("web_trader")}</Link>
               </li>
             </ul>
           </div>
-         
+
           <div>
-            <h4 className="pb-4 text-[20px] text-white">Get In Touch</h4>
+            <h4 className="pb-4 text-[20px] text-white">{t("contact")}</h4>
             <div className="flex gap-2 mb-2 items-center">
               <Mail className="w-4 h-4" />
               <p className="">denioMenu@gmail.com</p>
@@ -105,12 +103,12 @@ export default function Footer() {
         <hr />
         <div className="md:flex text-center justify-between pt-10">
           <div>
-            <p>@2025 Dineo, All rights Reserved </p>
+            <p>{t("reserved")}</p>
           </div>
           <div>
             <ul className="flex gap-2">
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
+              <li>{t("Terms_Conditions")}</li>
+              <li>{t("Privacy_Policy")}</li>
             </ul>
           </div>
         </div>

@@ -5,37 +5,35 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-
-import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
+import {Link} from '@/i18n/routing';
 
 export default function Navbar() {
+  const t = useTranslations("header");
   return (
     <div className="hidden md:block">
       <ul className="flex items-center gap-6">
+      <Link href={"/"} className="hover:text-main-primary">
+          {t("home")}
+        </Link>
         <li>
           <HoverCard>
             <HoverCardTrigger className="cu cursor-pointer hover:text-main-primary">
-              Products
+              {t("products")}
             </HoverCardTrigger>
             <HoverCardContent className="mt-4 mx-4">
               <div className="flex flex-col gap-2 font-[700] uppercase">
-                <Link
-                  href={"/products/forex"}
-                  className="hover:text-main-bg"
-                >
-                  FOREX
+                <Link href={"/products/forex"} className="hover:text-main-bg">
+                  {t("forex")}
                 </Link>
                 <Link
                   href={"/products/cfd-trading"}
                   className="hover:text-main-bg"
                 >
-                  CFD TRADING
+                  {t("cfd_trading")}
                 </Link>
-                <Link
-                  href={"/products/stocks"}
-                  className="hover:text-main-bg"
-                >
-                  STOCKES
+                <Link href={"/products/stocks"} className="hover:text-main-bg">
+                  {t("stocks")}
                 </Link>
               </div>
             </HoverCardContent>
@@ -44,7 +42,7 @@ export default function Navbar() {
         <li>
           <HoverCard>
             <HoverCardTrigger className="cu cursor-pointer hover:text-main-primary">
-              Trading Platforms
+              {t("trading_platforms")}
             </HoverCardTrigger>
             <HoverCardContent className="mt-4">
               <div className="flex flex-col gap-2 font-[700] uppercase">
@@ -52,33 +50,33 @@ export default function Navbar() {
                   href={"/trading-platforms/metatrader-4"}
                   className="hover:text-main-bg"
                 >
-                  MetaTrader 4
+                  {t("mt4")}
                 </Link>
                 <Link
                   href={"/trading-platforms/metatrader-5"}
                   className="hover:text-main-bg"
                 >
-                  MetaTrader 5
+                  {t("mt5")}
                 </Link>
                 <Link
                   href={"/trading-platforms/web-trader"}
                   className="hover:text-main-bg"
                 >
-                  Web Trader
+                  {t("web_trader")}
                 </Link>
               </div>
             </HoverCardContent>
           </HoverCard>
         </li>
         <Link href={"/cryptocurrencies"} className="hover:text-main-primary">
-          Cryptocurrencies
+          {t("cryptocurrencies")}
         </Link>
         <Link href={"/trading-info"} className="hover:text-main-primary">
-          Trading Info
+          {t("trading_info")}
         </Link>
 
         <Link href={"/about"} className="hover:text-main-primary">
-          About Us
+          {t("about_us")}
         </Link>
       </ul>
     </div>

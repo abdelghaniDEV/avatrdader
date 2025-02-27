@@ -13,9 +13,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
 
 const ResponsiveNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations("header");
+  const locale = useLocale();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,24 +27,21 @@ const ResponsiveNavbar = () => {
   // Animation variants for the mobile menu
   const menuVariants = {
     open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" },
+    
   };
 
   return (
     <div>
       {/* Top Banner */}
       <div className="bg-[#e7e9ff] py-3 flex items-center justify-center text-[#565a8e] hidden md:block">
-        <h5 className="text-center">
-          Trading CFDs and FX Options entails risk and could result in the loss
-          of your capital.
-        </h5>
+        <h5 className="text-center">{t("risk_warning")}</h5>
       </div>
 
       {/* Header */}
       <div className="bg-main-primary py-1 text-white">
         <div className="flex items-center justify-center md:justify-between container">
           {/* Logo */}
-          <Link href={'/'} className="w-[130px] md:w-[200px]">
+          <Link href={"/"} className="w-[130px] md:w-[200px]">
             <Image src={Logo} alt="LOGO" className="object-cover" />
           </Link>
 
@@ -49,9 +49,9 @@ const ResponsiveNavbar = () => {
           <div className="hidden md:block">
             <ul className="flex items-center gap-2">
               <li>|</li>
-              <li>Help</li>
+              <li>{t("help")}</li>
               <li>|</li>
-              <li>English</li>
+              <li>{t("language")}</li>
             </ul>
           </div>
         </div>
@@ -75,32 +75,22 @@ const ResponsiveNavbar = () => {
               <li>
                 <DropdownMenu>
                   <DropdownMenuTrigger className="focus:outline-none">
-                    Products
+                    {t("products")}
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuItem>
-                      <Link
-                        href="/products/forex"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Forex
-                      </Link>
-                    </DropdownMenuItem>
-
-                    <DropdownMenuItem>
-                      <Link
-                        href="/products/cfd-trading"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Cfd Trading
+                      <Link href="/products/forex" onClick={() => setIsMenuOpen(false)}>
+                        {t("forex")}
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                      <Link
-                        href="/products/stocks"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Stocks
+                      <Link href="/products/cfd-trading" onClick={() => setIsMenuOpen(false)}>
+                        {t("cfd_trading")}
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link href="/products/stocks" onClick={() => setIsMenuOpen(false)}>
+                        {t("stocks")}
                       </Link>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
@@ -111,31 +101,22 @@ const ResponsiveNavbar = () => {
               <li>
                 <DropdownMenu>
                   <DropdownMenuTrigger className="focus:outline-none">
-                    Trading Platforms
+                    {t("trading_platforms")}
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuItem>
-                      <Link
-                        href="/trading-platforms/metatrader-4"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        MetaTrader 4 (MT4)
+                      <Link href="/trading-platforms/metatrader-4" onClick={() => setIsMenuOpen(false)}>
+                        {t("mt4")}
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                      <Link
-                        href="/trading-platforms/metatrader-5"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        MetaTrader 5 (MT5)
+                      <Link href="/trading-platforms/metatrader-5" onClick={() => setIsMenuOpen(false)}>
+                        {t("mt5")}
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                      <Link
-                        href="/trading-platform/web-trader"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Web Trader
+                      <Link href="/trading-platform/web-trader" onClick={() => setIsMenuOpen(false)}>
+                        {t("web_trader")}
                       </Link>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
@@ -143,13 +124,13 @@ const ResponsiveNavbar = () => {
               </li>
 
               <li onClick={() => setIsMenuOpen(false)}>
-                <Link href={"/cryptocurrencies"}>Cryptocurrencies</Link>
+                <Link href={"/cryptocurrencies"}>{t("cryptocurrencies")}</Link>
               </li>
               <li onClick={() => setIsMenuOpen(false)}>
-                <Link href={"/trading-info"}>Trading Info</Link>
+                <Link href={"/trading-info"}>{t("trading_info")}</Link>
               </li>
               <li onClick={() => setIsMenuOpen(false)}>
-                <Link href={"/about"}>About Us</Link>
+                <Link href={"/about"}>{t("about_us")}</Link>
               </li>
             </motion.ul>
           )}
@@ -157,20 +138,15 @@ const ResponsiveNavbar = () => {
 
         {/* Login and Register Buttons */}
         <div className="hidden md:flex items-center gap-1">
-          <Button className="bg-inherit text-main-primary font-[600]">
-            Login
-          </Button>
+          <Button className="bg-inherit text-main-primary font-[600]">{t("login")}</Button>
           <Button className="font-[500] h-8 bg-main-bg">
-            <span>Register New</span>
+            <span>{t("register")}</span>
           </Button>
         </div>
 
         {/* Mobile Menu and User Icon */}
         <div className="flex items-center justify-between gap-2 md:hidden">
-          <Menu
-            className="w-[30px] h-[30px] cursor-pointer"
-            onClick={toggleMenu}
-          />
+          <Menu className="w-[30px] h-[30px] cursor-pointer" onClick={toggleMenu} />
           <UserCircle className="w-[30px] h-[30px]" />
         </div>
       </div>

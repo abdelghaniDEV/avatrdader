@@ -1,0 +1,334 @@
+{
+  "home": {
+    "hero_title": "Welcome to Al Ansari Exchange – Trade Smarter, Trade Faster",
+    "hero_text": "Be empowered to trade CFDs on FX, Stocks, Commodities, Crypto, Indices, & Options. Get advanced tools, personalised support, uncompromising security.",
+    "register_now": "Register Now",
+    "free_demo": "Free Demo",
+
+    "markets_title": "Trade a Wide Range of Global Markets with Competitive Spreads",
+    "forex": "Forex",
+    "forex_desc": "Trade major currency pairs with tight spreads starting from 0.0 pips and ultra-low commissions.",
+    "indices": "Indices",
+    "indices_desc": "Access global indices like UK 100 and Germany 40, with spreads as low as 1 point.",
+    "commodities": "Commodities",
+    "commodities_desc": "Trade gold, oil, and more with competitive spreads starting from just 0.04 points.",
+    "stocks": "Stocks",
+    "stocks_desc": "Trade over 5,500 international stocks, including extended hours on top US shares.",
+    "cryptos": "Cryptocurrencies",
+    "cryptos_desc": "Buy and sell leading cryptos directly—no need for third-party wallets or exchanges.",
+    "bullion": "Bullion",
+    "bullion_desc": "Invest in physical gold, silver, and platinum, securing your wealth in precious metals.",
+
+    "trading_title": "Forex Trading",
+    "trading_text": "Trading forex is one of the most popular trading options. This is why you need a cutting-edge and reliable trading platform that allows you to trade tight spreads on major and minor currency pairs. Choose from our standard or premium forex pricing modules – whatever suits your forex trading needs.",
+    "contact_us": "Contact Us",
+
+    "pricing_title": "Pushing Your Trading Forward",
+    "pricing_text": "Take control of your trading needs with super-tight spreads as low as 0.0 for major currencies with a $5 USD commission per $100k USD traded.",
+    "open_raw_account": "Open a RAW Spread Account",
+
+    "funding_title": "Already have a live trading account?",
+    "funding_text": "It's easy to fund your trading account using one of the following payment methods. Pick the payment option that works best for you, whether it's debit card, bank wire transfer, or ACH deposit.",
+
+    "platform_title": "Powerful Trading Platforms",
+    "platform_subtitle": "You Can Trust",
+    "platform_text": "Experience a range of powerful mobile platforms tailored for traders at all levels on your mobile device."
+  },
+  "header": {
+    "risk_warning": "Trading CFDs and FX Options entails risk and could result in the loss of your capital.",
+    "help": "Help",
+    "language": "English",
+    "home" : "Home",
+    "products": "Products",
+    "forex": "Forex",
+    "cfd_trading": "CFD Trading",
+    "stocks": "Stocks",
+    "trading_platforms": "Trading Platforms",
+    "mt4": "MetaTrader 4 (MT4)",
+    "mt5": "MetaTrader 5 (MT5)",
+    "web_trader": "Web Trader",
+    "cryptocurrencies": "Cryptocurrencies",
+    "trading_info": "Trading Info",
+    "about_us": "About Us",
+    "login": "Login",
+    "register": "Register New"
+  },
+  "forex": {
+    "forex_trading": "Forex Trading",
+    "home": "Home",
+    "forex_trading_with": "Forex Trading with Al Ansari-Exchange",
+    "forex_trading_description": "Dive into the vast, 24/5 world of FX trading, where opportunities arise at every moment in a market of unparalleled size. Choose Al Ansari-Exchange as your broker and get access to some of the best Forex trading platforms!",
+    "join_Al Ansari-Exchanger": "Join Al Ansari-Exchanger",
+    "forex_trading_made_easy": "Forex Trading Made Easy",
+    "forex_trading_made_easy_description": "Enter the Forex market anytime with Al Ansari-Exchange, your 24/5 gateway to the global currency market. Go long or short, and use leverage to enhance your trades. Begin now and start taking advantage of every market shift.",
+    "why_choose_Al Ansari-Exchange": "Why Choose Al Ansari-Exchange",
+    "choose01": "Trade with a globally regulated broker operating under strict regulatory standards across multiple jurisdictions. Client funds are held in segregated accounts for increased security.",
+    "choose02": "1250+ instruments available, including Forex, Cryptocurrencies, Stocks, Commodities, and Indices.",
+    "choose03": "Forex trading platforms for Desktop, tablet, mobile, and Web-based trading with MetaTrader 4, MetaTrader 5, our proprietary WebTrader, AvaOptions, and the award-winning Al Ansari-Exchange App..",
+    "choose04": "Exclusive features like AvaProtect automated risk management solution and actionable in-platform trading signals by Trading Central.",
+    "choose05": "Free Demo Account to practice trading with zero risk.",
+    "benefits": "Forex Trading Benefits",
+    "benefits_text": "The FX Market, a.k.a. the Foreign Exchange Market, is a decentralised exchange where all the world's currencies are actively traded. While other markets have a centralised location, FX trading takes place electronically, anywhere and everywhere. Did you know that trading takes place 24 hours a day? As the world's most liquid market, forex trading volumes have topped $6.6 trillion daily (2019 figures), with rising numbers of forex traders entering the scene. Such is the size and scope of the forex markets that it dwarfs all other major markets combined. We invite you to learn more about Forex Trading with our and guides. Global currency trading activity is off the charts, and FX trading confers many benefits to you. As you're about to find out, forex presents incredible trading opportunities, and Al Ansari-Exchange is ready to reveal it all to you. Open today a forex trading account and start!",
+    "register_new": "Register New"
+  },
+  "cfd_trading": {
+    "cfd_trading": "CFD Trading",
+    "home": "Home",
+    "cfd_trading_with": "Make A Difference",
+    "cfd_subtitle": "withCFDs Trading!",
+    "cfd_trading_description": "When you trade CFDs with Al Ansari-Exchange, you get to trade with a well-regulated broker that provides some of the world’s best trading platforms, and you can profit on markets whether they rise or fall!",
+    "start_trading": "Start trading now",
+    "cfd_trading_made_easy": "Trade the World with CFDs ",
+    "cfd_trading_made_easy_description": "Explore the thrilling world of CFDs or Contracts for Difference, a dynamic way to participate in the financial markets without owning the actual assets. CFD trading is about making bold predictions on price changes, offering a unique adventure into the world of finance that's accessible to everyone. Dive in and experience the thrill of the market at your fingertips!",
+    "why_choose_Al Ansari-Exchange": "Why Trade CFDs with Al Ansari-Exchange?",
+    "choose01": "Al Ansari-Exchange operates under strict international regulations, ensuring a secure and reliable trading environment. Your safety is our top priority.",
+    "choose02": "Our commitment to excellence is recognized industry-wide, earning us multiple awards. With Al Ansari-Exchange, you will always receive top-quality service.",
+    "choose03": "Serving clients since 2006, Al Ansari-Exchange has established itself as a trusted leader in the CFD trading industry. You can trade with confidence.",
+    "choose04": "Access unique trading resources like AvaProtect, Trading Central, and AvaSocial. Al Ansari-Exchange equips you with powerful tools to help you trade effectively.",
+    "choose05": "Your security is our priority. All client funds are held in segregated bank accounts, and all interactions on our website are encrypted using top security protocols. Trade with peace of mind, knowing your funds and personal details are protected.",
+    "benefits": "CFD Trading Platforms by Al Ansari-Exchange",
+    "benefits_description": "Al Ansari-Exchange caters to the diverse needs of traders by providing a range of user-friendly CFD trading platforms, ensuring an efficient and tailored trading experience.",
+    "benefits_text": "The FX Market, a.k.a. the Foreign Exchange Market, is a decentralised exchange where all the world's currencies are actively traded. While other markets have a centralised location, FX trading takes place electronically, anywhere and everywhere. Did you know that trading takes place 24 hours a day? As the world's most liquid market, forex trading volumes have topped $6.6 trillion daily (2019 figures), with rising numbers of forex traders entering the scene. Such is the size and scope of the forex markets that it dwarfs all other major markets combined. We invite you to learn more about Forex Trading with our and guides. Global currency trading activity is off the charts, and FX trading confers many benefits to you. As you're about to find out, forex presents incredible trading opportunities, and Al Ansari-Exchange is ready to reveal it all to you. Open today a forex trading account and start!",
+    "benefits01": {
+      "title": "MT4/5",
+      "description": "The MetaTrader family platforms, renowned for their advanced customization capabilities and comprehensive analytic tools, are favored among traders for their robustness and reliability, making them some of the best platforms for CFD trading."
+    },
+    "benefits02": {
+      "title": "WebTrader",
+      "description": "Offers a clean and straightforward interface directly from your browser (no download required). Integrated with Trading Signals, it simplifies trading by providing actionable insights directly on the platform."
+    },
+    "benefits03": {
+      "title": "AvaProtect",
+      "description": "Our proprietary Mobile Trading App allows you to trade on the go, ensuring you never miss trading opportunities."
+    },
+    "benefits04": {
+      "title": "Trading Central",
+      "description": "A trusted platform for traders, Trading Central offers a wide range of resources, including in-depth analysis, risk management tools, and personalized trading advice."
+    }
+  },
+  "stocks": {
+    "stocks": "Stock Trading",
+    "home": "Home",
+    "stocks_trading_with": "Trade Stocks",
+    "stocks_trading_description": "with A Regulated, Award-Winning Broker.",
+    "stocks_text": "Trade Stocks CFDs of major corporations without the fees or restrictions associated with traditional equities trading. Interested in trading Stocks with Al Ansari-Exchange?",
+    "register_new": "Register New",
+    "invest": "Invest in Leading Global Companies",
+    "invest_description": "Trade the world’s leading Stocks with Al Ansari-Exchange. Trade stock CFDs with Al Ansari-Exchange and enjoy leveraged trading, going long and short, innovative order types, professional support, and a safe and secure trading environment.",
+    "benefits": "Why Trade with Al Ansari-Exchange",
+    "benefits_description": "Al Ansari-Exchange caters to the diverse needs of traders by providing a range of user-friendly CFD trading platforms, ensuring an efficient and tailored trading experience.",
+    "benefits_text": "The FX Market, a.k.a. the Foreign Exchange Market, is a decentralised exchange where all the world's currencies are actively traded. While other markets have a centralised location, FX trading takes place electronically, anywhere and everywhere. Did you know that trading takes place 24 hours a day? As the world's most liquid market, forex trading volumes have topped $6.6 trillion daily (2019 figures), with rising numbers of forex traders entering the scene. Such is the size and scope of the forex markets that it dwarfs all other major markets combined. We invite you to learn more about Forex Trading with our and guides. Global currency trading activity is off the charts, and FX trading confers many benefits to you. As you're about to find out, forex presents incredible trading opportunities, and Al Ansari-Exchange is ready to reveal it all to you. Open today a forex trading account and start!",
+    "benefits01": {
+      "title": "Years of Excellence",
+      "description": "Since 2006, Al Ansari-Exchange has been at the forefront of online stock trading, providing retail traders access to the best stocks from top global stock exchanges."
+    },
+    "benefits02": {
+      "title": "Global Regulation",
+      "description": "Our adherence to strict international regulations across 9 jurisdictions underlines our commitment to providing a trustworthy and secure trading environment."
+    },
+    "benefits03": {
+      "title": "Unmatched Safety and Security",
+      "description": "With client funds held in segregated accounts and all online interactions encrypted, we prioritise your safety and security above all.."
+    },
+    "benefits04": {
+      "title": "Innovative Trading Resources",
+      "description": "Al Ansari-Exchange sets you apart with unique resources like AvaProtect, Trading Central, and Actionable Trading Signals, to enhance your shares trading strategies."
+    },
+    "benefits05": {
+      "title": "Award-Winning Broker",
+      "description": "Our dedication to excellence has been recognised with multiple industry awards, affirming our status as a top stock CFD broker"
+    }
+  },
+  "mt4": {
+    "mt4": "metatrader-4",
+    "home": "Home",
+    "mt4_trading_with": "Trading withMetaTrader 4",
+    "mt4_text": "A seriously good trader needs a seriously powerful platform – This is the MT4. There’s a reason why the MT4 is considered the most popular platform for online traders. It is rich with features for the more advanced trader, and simple enough for the newer trader to learn. Take advantage of thousands of indicators, 10 timeframes and multiple chart views",
+    "register_new": "Register New",
+    "features": {
+      "title": "MetaTrader 4 Features",
+      "data01": "Flexible and fast trading platform",
+      "data02": "Trading signals from top providers",
+      "data03": "Expert advisors for algorithmic trading",
+      "data04": "Global accessibility from PC, web & mobile"
+    },
+    "benefits": {
+      "title": "Meet MetaTrader 4",
+      "description": "MT4 has been around since 2002 and since become the industry benchmark in online trading. Easily customisable, it is both user-friendly for novices, and comprehensive, for seasoned market pros",
+      "01": {
+        "title": "Deposit a minimum of $100",
+        "description": "Fund your account to enter the markets"
+      },
+      "02": {
+        "title": "Download MetaTrader 4",
+        "description": "and log in with your credentials"
+      },
+      "03": {
+        "title": "Open A Real Account",
+        "description": "and select MetaTrader 4 as your platform"
+      }
+    }
+  },
+  "mt5": {
+    "mt5": "metatrader-5",
+    "home": "Home",
+    "mt5_trading_with": "Trading withMetaTrader 5",
+    "mt5_text": "MT5 is a state-of-the-art, multi-functional platform that boasts advanced auto trading systems, technical tools and copy trading. MetaTrader 5 is designed to accommodate advanced trading across a wider selection of asset classes than its predecessor, MetaTrader 4. Feature-rich, it boasts advanced tools, and offers superior execution",
+    "register_new": "Register New",
+    "features": {
+      "title": "MetaTrader 5 Supports",
+      "data01": "Expert Advisors (EAs)",
+      "data02": "Custom Indicators",
+      "data03": "Scripts",
+      "data04": "Libraries"
+    },
+    "benefits": {
+      "title": "Meet MetaTrader 5",
+      "description": "More indicators, more market orders, more instruments – MT5 provides the professional trader with everything they need to succeed in today’s dynamic markets. Yet, the similar layout ensures a smooth transition from the market benchmark, the MT4",
+      "01": {
+        "title": "Deposit a minimum of $100",
+        "description": "Fund your account to enter the markets"
+      },
+      "02": {
+        "title": "Download MetaTrader 5",
+        "description": "and log in with your credentials"
+      },
+      "03": {
+        "title": "Open A Real Account",
+        "description": "and select MetaTrader 4 as your platform"
+      }
+    }
+  },
+  "web_trader": {
+    "web_trader": "webtrader",
+    "home": "Home",
+    "title": "No Download, No Limit Trading",
+    "text": "From its easy-to-use interface and modern design, this platform is simple to use and is suitable for both beginners and advanced traders. No need to download or install anything! web trading",
+    "register_new": "Register New",
+    "section_one": {
+      "title": "Why WebTrader?",
+      "description": "This platform is perfect for people who want a simple user experience, with all the critical functionality directly from a web browser. You can access a wide selection of studies and indicators and get timeframes up to a month. Be sure to use Trading Central, which comes fully integrated into the platform, for technical insight and instant pattern recognition. No installation required and it’s available on any computer on any browser",
+      "button": "Trade now"
+    },
+    "section_two": {
+      "title": "Use the Wisdom of the Crowd",
+      "description": "Buy and sell assets in seconds, and make educated decisions based on live market sentiment. Get accurate data on what Al Ansari-Exchange’s community are buying or selling in real time and stay on top of the market without having to spend time on conducting your own technical or fundamental analysis",
+      "button": "Trade now"
+    },
+    "section_three": {
+      "title": "Take Control of the Markets",
+      "description": "WebTrader gives you amazing features like AvaProtect™, a risk reduction tool which allows you to protect your trades from losing. Also set market and pending orders, take profit and stop loss, the option to partially close your positions, view trading history and charts. Open, close and edit individual and aggregate positions at the click of a mouse.",
+      "button": "Trade now"
+    },
+    "features": {
+      "title": "Al Ansari-Exchange: Trade with Confidence",
+      "data01": "Secured deposits with a regulate broker",
+      "data02": "Secured deposits with a regulate broker",
+      "data03": "Secured deposits with a regulate broker"
+    }
+  },
+  "crypto": {
+    "crypto": "cryptocurrencies",
+    "home": "Home",
+    "title": "Trade Cryptocurrencies with Al Ansari-Exchange",
+    "text": "Dive into the future of finance with Al Ansari-Exchange – your trusted cryptocurrency broker. Open an account today and start trading the world’s top cryptocurrencies",
+    "section_one": {
+      "title": "What are Cryptocurrencies?",
+      "description": "Cryptocurrencies are digital currencies secured by cryptography and powered by revolutionary blockchain technology. Bitcoin, launched in 2008, was the first-ever cryptocurrency. Cryptocurrencies are the future of money, but while they possess monetary qualities, they have also evolved to become digital stores of value. The success of Bitcoin has led to the emergence of thousands of other cryptocurrencies, with the market now very popular among traders due to their volatility, which often results in huge returns in short periods compared to other assets. However, this volatility has also caused cryptocurrency prices to plummet sometimes, highlighting the concept of high risk and high reward",
+      "subtitle": "Ready to trade Cryptocurrencies CFDs? Open an account today and start trading!",
+      "button": "Start Trading"
+    },
+    "section_two": {
+      "title": "Why Trade Cryptocurrencies with Al Ansari-Exchange",
+      "data01": {
+        "title": "A Legacy of Innovation and Trust",
+        "description": "Operating since 2006 and pioneering cryptocurrency CFDs since 2017, Al Ansari-Exchange has consistently led the way in"
+      },
+      "data02": {
+        "title": "Strict International Regulation",
+        "description": "Our adherence to regulations in 9 jurisdictions worldwide ensures a secure and compliant trading environment for all clients"
+      },
+      "data03": {
+        "title": "Safety and Security",
+        "description": "Al Ansari-Exchange prioritises protecting your investments, with client funds held in segregated accounts and all online interactions secured using encryption and many other security best practices and technologies"
+      },
+      "data04": {
+        "title": "Unique Trading Resources",
+        "description": "Leverage AvaProtect, Trading Central, and actionable Trading Signals to navigate the cryptocurrency markets with confidence and precision"
+      },
+      "data05": {
+        "title": "Award-Winning Broker",
+        "description": "Multiple industry awards recognise our commitment to excellence, affirming our position as a leading broker in the trading community"
+      },
+      "data06": {
+        "title": "Comprehensive Education ",
+        "description": "We provide extensive educational resources through our Education Centre, AvaAcademy. Access webinars, eBooks, as well as expert analysis and insights to enhance your trading knowledge and skills"
+      },
+      "button": "Start Trading"
+    }
+  },
+  "info": {
+    "info": "Trading Info",
+    "home": "Home",
+    "register_new": "Register New",
+
+    "title": "Trading information",
+    "text": "Continuing our promise towards clients in assuring their is conducted with confidence, Al Ansari-Exchange promotes a fully transparent trading policy to its traders. Find all the required trading information you need, including rates, spreads, leverage and other trading terms here – all provided to ensure a safe and comfortable trading experience.",
+    "info_01" :{
+      "title": "Ava Social",
+      "description": "AvaSocial is an innovative social trading app that enables you to copy the world’s best traders, chat with them and benefit from their success!."
+    },
+    "info_02" :{
+      "title": "What Type Of Broker Are They",
+      "description": "Not all forex brokers are created the same. There are differences in the structure and function of each forex broker, especially when it has to do with the individual traders."
+    },"info_03" :{
+      "title": "Profit Calculator",
+      "description": "Al Ansari-Exchange Calculator will allow you decide if or when to open and or your position, the margin requirement, the spread, swaps and other essential info."
+    }
+  },
+  "about" : {
+    "about": "About US",
+    "home": "Home",
+    "register_new" : "Register Now",
+    "section_one": {
+      "title" : "About US",
+      "text" : "Login Help English » About Al Ansari-Exchange Pioneering Online Trading Since 2006. We are one of the most secure brokers in the industry, with 9 regulations across 6 continents. We offer a wide choice of assets, leading platforms, and generous trading conditions"
+    },
+    "section_two": {
+      "title" : "Our Values",
+      "text" : "Integrity is more than just a keyword for us. We are guided by our customer-first approach to business, placing quality, integrity, and transparency as the cornerstones of everything we do",
+      "data01" : {
+        "title" : "Integrity and",
+        "subtitle" : "Fairness"
+      },
+      "data02" : {
+        "title" : "Customer Service",
+        "subtitle" : "Above All Else"
+      },
+      "data03" : {
+        "title" : "Ongoing",
+        "subtitle" : "Self-Improvement"
+      },
+      "data04" : {
+        "title" : "Constant",
+        "subtitle" : "Innovation"
+      }
+    },
+    "section_three": {
+      "title" : "Our Vision",
+      "text" : "Al Ansari-Exchange is committed to empowering people to invest and trade confidently in an innovative and reliable environment, supported by best-in-class personal service and uncompromising integrity"
+    },
+    "section_four": {
+      "title" : "Background",
+      "text" : "Since 2006 Al Ansari-Exchange has expanded enormously; with over 400,000 registered customers globally, executing more than two million trades a month. The company’s total trading volumes now surpass $70 billion per month. Al Ansari-Exchange’s user-oriented perspective, combined with solid financial backing, is unique to the field of online trading. From our 24-hour multilingual support desks to our broad range of platforms and services, we have successfully created the optimal trading environment for every level of trader. Our wide scope includes a full spectrum of trading instruments covering , stocks, commodities, cryptocurrencies and indices. Ava is a multi-national company with regional offices and sales centers in UAE, Dublin, Milan, Tokyo and Sydney. The company’s administrative headquarters are in Dublin, Ireland. Whether you are an experienced trader or a novice, Al Ansari-Exchange’s adaptable trading platforms and services aim to provide you with the right balance of simplicity and sophistication. It’s no wonder that Al Ansari-Exchange has earned over 30 reputable industry awards since 2009. We invite you to join the thousands of traders and affiliates who have chosen Al Ansari-Exchange as their preferred trading portal. Still not ready? Take a look at the by our clients!"
+    }
+  },
+  "footer" : {
+    "text" : "Al Ansari-Exchange EU Ltd is regulated by the Central Bank of Ireland. (No.C53877) Al Ansari-Exchange Markets Ltd. is regulated by the B.V.I Financial Services Commission Ava Capital Markets Australia Pty Ltd is regulated by the ASIC No.406684. Ava Capital Markets Pty is regulated by the South African Financial Sector Conduct Authority (FSCA No.45984). Al Ansari-Exchange Japan K.K. is licensed and regulated in Japan by the Financial Services Agency (License No.: 1662), the Financial Futures Association of Japan (License No.: 1574). Al Ansari-Exchange Middle East Ltd is regulated by the Abu Dhabi Global Markets (ADGM) Financial Regulatory Services Authority (FRSA) (No.190018). DT Direct Investment Hub Ltd. is regulated by the Cyprus Securities and Exchange Commission (No. 347/17). Read Al Ansari-Exchange risk disclosure before trading Forex, CFD’s, and/or FX Options. Forex, CFD and FX Options trading involves substantial risk of loss and is not suitable for all investors",
+    "Privacy_Policy" : "Privacy Policy",
+    "Terms_Conditions" : "Terms & Conditions",
+    "reserved" : "@2025 Dineo, All rights Reserved",
+    "contact" : "Get In Touch",
+     "need" : "Everything you need"
+  }
+}

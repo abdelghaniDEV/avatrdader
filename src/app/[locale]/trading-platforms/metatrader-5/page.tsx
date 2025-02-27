@@ -5,52 +5,47 @@ import React from "react";
 import { useTranslations, useLocale } from "next-intl";
 
 export default function page() {
-
-    const t = useTranslations("mt4");
-    const locale = useLocale();
+  const t = useTranslations("mt5");
+  const locale = useLocale();
   return (
     <div>
       <div className="w-full h-[20vh] xl:h-[35vh] relative bg-[#F3F3F3] bg-[80%] bg-cover ">
         <div className="flex flex-col items-center  absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <div className="flex flex-col items-center md:b-[25px] md:pb-[20px]">
             <h1 className="text-[25px] font-[600] lg:text-[55px] ">
-              {t("mt4")}
+              {t("mt5")}
             </h1>
             <div className="flex gap- items-center  text-[15px] lg:text-[17px]">
               <Link href={"/"}>{t("home")}</Link>
               <ChevronRight />
-              <h2 className="text-gray-400">{t("mt4")}</h2>
+              <h2 className="text-gray-400">{t("mt5")}</h2>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-[url(/bg-meta4.jpg)] bg-cover w-full h-[480px] md:h-[400px] lg:h-[400px]">
+      <div className={` ${locale === "ar" ? "bg-custom-gradient" : "bg-[url(/bg-meta5.jpg)]"}  bg-cover w-full h-[480px] md:h-[400px] lg:h-[400px]`}>
         <div className="flex  items-center justify-start pt-[20px] md:pt-[30px]  px-4 md:px-0">
           {/* Text Content */}
           <div
-             style={{
+            style={{
               textAlign: locale === "ar" ? "right" : "left",
             }}
-          className="w-full md:w-[800px] flex flex-col gap-4 text-white text-center container md:text-left">
+            className="w-full md:w-[800px] flex flex-col gap-4 text-white text-center container md:text-left"
+          >
             {/* Heading */}
             <h1 className="text-[36px] leading-[40px] md:text-[50px] md:leading-[50px] lg:text-[60px] lg:leading-[60px] font-[600]">
-              Trading withMetaTrader 4
+              {t("mt5_trading_with")}
             </h1>
 
             {/* Paragraph */}
             <p className="text-[16px] md:text-[18px] leading-[25px] lg:text-[20px]">
-              A seriously good trader needs a seriously powerful platform – This
-              is the MT4. There’s a reason why the MT4 is considered the most
-              popular platform for online traders. It is rich with features for
-              the more advanced trader, and simple enough for the newer trader
-              to learn. Take advantage of thousands of indicators, 10 timeframes
-              and multiple chart views.
+              {t("mt5_text")}
             </p>
 
             {/* Buttons */}
             <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
               <Button className="font-[550] h-11 w-full md:w-auto text-[16px] bg-main-bg">
-                Register New
+                {t("register_new")}
               </Button>
             </div>
           </div>
@@ -60,37 +55,34 @@ export default function page() {
         {/* Left Section */}
         <div className="flex flex-col gap-6">
           <h1 className="text-[24px] sm:text-[30px] font-[600]">
-            Meet MetaTrader 4
+            {t("benefits.title")}
           </h1>
           <p className="text-[16px] sm:text-[18px]">
-            MT4 has been around since 2002 and since become the industry
-            benchmark in online trading. Easily customisable, it is both
-            user-friendly for novices, and comprehensive, for seasoned market
-            pros.
+            {t("benefits.description")}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             <div className="flex flex-col gap-1 border-[1.5px] p-3 sm:p-1">
               <h4 className="text-[18px] sm:text-[20px] font-[700] leading-[24px]">
-                Deposit a minimum of $100
+                {t("benefits.01.title")}
               </h4>
               <p className="text-[14px] sm:text-[16px]">
-                Fund your account to enter the markets
+                {t("benefits.01.description")}
               </p>
             </div>
             <div className="flex flex-col gap-1 border-[1.5px] p-3 sm:p-1">
               <h4 className="text-[18px] sm:text-[20px] font-[700] leading-[24px]">
-                Download MetaTrader 4
+                {t("benefits.02.title")}
               </h4>
               <p className="text-[14px] sm:text-[16px]">
-                and log in with your credentials
+                {t("benefits.02.description")}
               </p>
             </div>
             <div className="flex flex-col gap-1 border-[1.5px] p-3 sm:p-1">
               <h4 className="text-[18px] sm:text-[20px] font-[700] leading-[24px]">
-                Open A Real Account
+                {t("benefits.03.title")}
               </h4>
               <p className="text-[14px] sm:text-[16px]">
-                and select MetaTrader 4 as your platform
+                {t("benefits.03.title")}
               </p>
             </div>
           </div>
@@ -100,13 +92,14 @@ export default function page() {
         <div className="border-l-0 md:border-l-[2px] border-main-primary md:pl-20">
           <div className="flex flex-col gap-3 pb-6">
             <h1 className="text-[24px] sm:text-[30px] font-[600]">
-              MetaTrader 4 Features
+              {t("features.title")}
             </h1>
             <ul className="text-[16px] sm:text-[20px] list-disc px-6">
-              <li>Flexible and fast trading platform</li>
-              <li>Trading signals from top providers</li>
-              <li>Expert advisors for algorithmic trading</li>
-              <li>Global accessibility from PC, web & mobile</li>
+              {}
+              <li>{t("features.data01")}</li>
+              <li>{t("features.data02")}</li>
+              <li>{t("features.data03")}</li>
+              <li>{t("features.data04")}</li>
             </ul>
           </div>
           <div className="flex flex-col gap-3">

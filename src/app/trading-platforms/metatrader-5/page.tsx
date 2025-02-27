@@ -2,15 +2,18 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function page() {
+  const t = useTranslations("mt5");
+  const locale = useLocale();
   return (
     <div>
       <div className="w-full h-[20vh] xl:h-[35vh] relative bg-[#F3F3F3] bg-[80%] bg-cover ">
         <div className="flex flex-col items-center  absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <div className="flex flex-col items-center md:b-[25px] md:pb-[20px]">
             <h1 className="text-[25px] font-[600] lg:text-[55px] ">
-              metatrader-5
+              {t("mt5")}
             </h1>
             <div className="flex gap- items-center  text-[15px] lg:text-[17px]">
               <Link href={"/"}>Home</Link>
