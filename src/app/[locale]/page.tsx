@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import imgHome01 from "@/assets/home01.jpg";
@@ -6,19 +7,22 @@ import BoxFeta from "@/components/boxFeta";
 import PlatformTrading from "@/assets/fx-at-hero-mt4.jpg";
 import aword01 from "@/assets/Outstanding-Regulated-Broker-_-Cfi.co-1.png";
 import { useTranslations, useLocale } from "next-intl";
+import { useEffect } from "react";
 
 export default function Home() {
   const t = useTranslations("home");
   const locale = useLocale();
 
+  useEffect(() => {
+    document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
+  }, [locale]);
+
 
 
   return (
     <div
-      className={`${locale === "ar" ? "text-right" : "text-left"}`}
-      style={{
-        textAlign: locale === "ar" ? "right" : "left",
-      }}
+      className=""
+      
     >
       {/* hero */}
       <div
@@ -59,14 +63,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-white py-6 md:py-10 my-10   md:px-0">
+      <div  className="bg-white py-6 md:py-10 my-10  container  md:px-0">
         {/* Heading */}
         <h1 className="text-center text-[24px] md:text-[30px] font-[600] pb-5">
           {t("markets_title")}
         </h1>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container ">
           <BoxFeta title={t("forex")} text={t("forex_desc")} />
           <BoxFeta title={t("indices")} text={t("indices_desc")} />
           <BoxFeta title={t("commodities")} text={t("commodities_desc")} />
@@ -75,21 +79,16 @@ export default function Home() {
           <BoxFeta title={t("bullion")} text={t("bullion_desc")} />
         </div>
       </div>
-      <div className="container grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-10 my-10 md:mb-20 ">
+      <div   style={{
+              textAlign: locale === "ar" ? "right" : "left",
+            }}  className="container grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-10 my-10 md:mb-20 ">
         <div className="relative ">
           <Image
             src={imgHome01}
             alt="hero"
             className="rounded-[10px] w-full h-auto"
           />
-          <div
-            className={`hidden md:block w-[80px] h-[400px] absolute top-[-18px] rounded-[20px] ${
-              locale === "ar" ? "right-[-50px]" : "left-[-50px]"
-            }  z-[-1]`}
-            style={{
-              background: "linear-gradient(to right, #12225c, #0e89c8)",
-            }}
-          ></div>
+         
         </div>
         <div>
           <h1 className="text-[30px] md:text-[40px] font-[700] pb-[10px]">

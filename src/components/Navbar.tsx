@@ -12,14 +12,14 @@ import { ChevronDown } from "lucide-react";
 export default function Navbar() {
   const t = useTranslations("header");
   return (
-    <div className="hidden md:block">
-      <ul className="flex items-center gap-6">
+    <div className="hidden lg:block">
+      <ul className="flex items-center gap-4 lg:gap-4">
       <Link href={"/"} className="hover:text-main-primary ">
           {t("home")}
         </Link>
         <li>
           <HoverCard>
-            <HoverCardTrigger className="cu cursor-pointer hover:text-main-primary flex items-end gap-2">
+            <HoverCardTrigger className="cu cursor-pointer hover:text-main-primary flex items-center gap-1">
               {t("products")}
               <ChevronDown />
             </HoverCardTrigger>
@@ -44,8 +44,9 @@ export default function Navbar() {
         </li>
         <li>
           <HoverCard>
-            <HoverCardTrigger className="cu cursor-pointer hover:text-main-primary flex items-center gap-2">
-              {t("trading_platforms")} <ChevronDown />
+            <HoverCardTrigger className="cu cursor-pointer hover:text-main-primary flex items-center gap-1">
+              {t("trading_platforms")} 
+              <ChevronDown />
             </HoverCardTrigger>
             <HoverCardContent className="mt-4">
               <div className="flex flex-col gap-2 font-[700] uppercase">

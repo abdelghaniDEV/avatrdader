@@ -12,7 +12,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import {Link} from '@/i18n/routing';
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/routing";
 
@@ -36,7 +36,7 @@ const ResponsiveNavbar = () => {
   return (
     <div>
       {/* Top Banner */}
-      <div className="bg-[#e7e9ff] py-3 flex items-center justify-center text-[#565a8e] hidden md:block">
+      <div className="bg-[#e7e9ff] py-3 flex items-center justify-center w-full text-[#565a8e] hidden md:block">
         <h5 className="text-center">{t("risk_warning")}</h5>
       </div>
 
@@ -46,6 +46,7 @@ const ResponsiveNavbar = () => {
           {/* Logo */}
           <Link href={"/"} className="w-[130px] md:w-[200px]">
             <Image src={Logo} alt="LOGO" className="object-cover" />
+            <span className="text-[13px]">03.01.01.002.1981.01</span>
           </Link>
 
           {/* Help and Language */}
@@ -73,8 +74,6 @@ const ResponsiveNavbar = () => {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-
-             
             </ul>
           </div>
         </div>
@@ -210,25 +209,27 @@ const ResponsiveNavbar = () => {
         </div>
 
         {/* Mobile Menu and User Icon */}
-        <div className="flex items-center justify-between gap-2 md:hidden">
+        <div className="flex items-center justify-between gap-2 md:hidden ">
           <Menu
-            className="w-[30px] h-[30px] cursor-pointer"
+            className="w-[30px] h-[30px] cursor-pointer md:hidden"
             onClick={toggleMenu}
           />
 
-          <DropdownMenu>
-            <DropdownMenuTrigger className="focus:outline-none">
-              <UserCircle className="w-[30px] h-[30px]" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="mx-4">
-              <DropdownMenuItem className="font-[500] h-8 bg-main-bg cursor-pointer">
-                {t("register")}
-              </DropdownMenuItem>
-              <DropdownMenuItem className="bg-inherit text-main-primary font-[600] cursor-pointer">
-                {t("login")}
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <div className="md:hidden">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="focus:outline-none">
+                <UserCircle className="w-[30px] h-[30px]" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="mx-4">
+                <DropdownMenuItem className="font-[500] h-8 bg-main-bg cursor-pointer">
+                  {t("register")}
+                </DropdownMenuItem>
+                <DropdownMenuItem className="bg-inherit text-main-primary font-[600] cursor-pointer">
+                  {t("login")}
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
         </div>
       </div>
     </div>

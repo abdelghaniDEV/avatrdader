@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/Al-Ansari-Exchange-Logo.png";
-import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Facebook, FacebookIcon, Instagram, Linkedin, Mail, Phone, Twitter } from "lucide-react";
 import Image from "next/image";
 import aword01 from "../assets/award-footer-2.png";
 import aword02 from "../assets/award-footer-1.png";
@@ -13,7 +13,7 @@ import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const t = useTranslations("footer");
-  const th = useTranslations("header")
+  const th = useTranslations("header");
   return (
     <div className="">
       <div className="py-8">
@@ -31,12 +31,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="bg-main-primary w-full  text-neutral-400  container py-10">
-        <div className="flex flex-col md:flex-row justify-between  gap-[20px] md:gap-[70px] pb-10">
+        <div className="flex flex-col lg:flex-row justify-between  gap-[20px] md:gap-[70px] pb-10">
           <div>
             <Image src={logo} alt="logo" className="w-[200px]" />
-            <p className="md:w-[500px] pt-5">
-              {t("text")}
-            </p>
+            <p className="md:w-[500px] pt-5">{t("text")}</p>
           </div>
           <div>
             <h4 className="pb-4 text-[20px] text-white">{t("need")}</h4>
@@ -67,11 +65,13 @@ export default function Footer() {
               </li>
               <li>
                 <Link href={"/trading-platforms/metatrader-5"}>
-                {th("mt5")}
+                  {th("mt5")}
                 </Link>
               </li>
               <li>
-                <Link href={"/trading-platforms/web-trader"}>{th("web_trader")}</Link>
+                <Link href={"/trading-platforms/web-trader"}>
+                  {th("web_trader")}
+                </Link>
               </li>
             </ul>
           </div>
@@ -80,22 +80,39 @@ export default function Footer() {
             <h4 className="pb-4 text-[20px] text-white">{t("contact")}</h4>
             <div className="flex gap-2 mb-2 items-center">
               <Mail className="w-4 h-4" />
-              <p className="">denioMenu@gmail.com</p>
+              <p className="">info@al-ansari.com</p>
             </div>
             <div className="flex gap-2 mb-2 items-center">
               <Phone className="w-4 h-4" />
-              <p className="">+212636998077</p>
+              <p className="">+442045871782</p>
             </div>
             <ul className="flex  gap-2 text-white items-center">
-              <li className="b bg-neutral-600 p-[5px] rounded-[10px] ">
-                <Linkedin className="h-[20px] w-[20px]" />
-              </li>
-              <li className="b bg-neutral-600 p-[5px] rounded-[10px] ">
-                <Instagram className="h-[20px] w-[20px]" />
-              </li>
-              <li className="b bg-neutral-600 p-[5px] rounded-[10px] ">
-                <Facebook className="h-[20px] w-[20px]" />
-              </li>
+              
+              <a
+                href="https://www.instagram.com/alansariexchange"
+                className="bg-neutral-600 p-[5px] rounded-[10px] hover:bg-neutral-700 transition-colors"
+                target="_blank" // لفتح الرابط في نافذة جديدة
+                rel="noopener noreferrer" // لتعزيز الأمان
+              >
+                <Instagram className="h-[20px] w-[20px] text-white" />
+              </a>
+              <a
+                href="https://www.facebook.com/AlAnsariExchangeOfficialPage"
+                className="bg-neutral-600 p-[5px] rounded-[10px] hover:bg-neutral-700 transition-colors"
+                target="_blank" // لفتح الرابط في نافذة جديدة
+                rel="noopener noreferrer" // لتعزيز الأمان
+              >
+                <Facebook className="h-[20px] w-[20px] text-white" />
+              </a>
+              <a
+                href="https://x.com/alansariex?s=11"
+                className="bg-neutral-600 p-[5px] rounded-[10px] hover:bg-neutral-700 transition-colors"
+                target="_blank" // لفتح الرابط في نافذة جديدة
+                rel="noopener noreferrer" // لتعزيز الأمان
+              >
+                <Twitter  className="h-[20px] w-[20px] text-white" />
+              </a>
+              
             </ul>
           </div>
         </div>
