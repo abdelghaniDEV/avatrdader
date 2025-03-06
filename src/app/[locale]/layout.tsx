@@ -32,7 +32,12 @@ export const metadata: Metadata = {
     url: "https://avatrdader.vercel.app", // Replace with your actual URL
     siteName: "Al Ansari-Exchange",
   },
+  other : {
+    'google-site-verification' : "kDvZD41VHTDTtKgAz-dUpkZ324EPC9ZwIonb7Ul6aF4"
+  }
 };
+
+{/* <meta name="google-site-verification" content="kDvZD41VHTDTtKgAz-dUpkZ324EPC9ZwIonb7Ul6aF4" /> */}
 
 export default async function RootLayout({
   children,
