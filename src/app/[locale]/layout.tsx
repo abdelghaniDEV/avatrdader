@@ -19,18 +19,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Al Ansari-Exchange",
+  title: "Al-ansariTradinge",
   description:
-    "The Best Online Forex Trading Experience! ⭐ Trade Forex, Stocks, Commodities, Cryptos &amp; Stock Market Indices with Al Ansari-Exchange&#039;s ✅ Award Winning Platforms",
+    "The Best Online Forex Trading Experience! ⭐ Trade Forex, Stocks, Commodities, Cryptos &amp; Stock Market Indices with Al-ansariTrading ✅ Award Winning Platforms",
   icons: {
     icon: "/favicon-32x32.png", // Path to your favicon
   },
   openGraph: {
-    title: "Al Ansari-Exchange",
+    title: "Al-ansariTrading",
     description:
-      "The Best Online Forex Trading Experience! ⭐ Trade Forex, Stocks, Commodities, Cryptos & Stock Market Indices with Al Ansari-Exchange's ✅ Award-Winning Platforms",
+      "The Best Online Forex Trading Experience! ⭐ Trade Forex, Stocks, Commodities, Cryptos & Stock Market Indices with Al-ansariTrading ✅ Award-Winning Platforms",
     url: "https://avatrdader.vercel.app", // Replace with your actual URL
-    siteName: "Al Ansari-Exchange",
+    siteName: "Al-ansariTrading",
   },
   other : {
     'google-site-verification' : "kDvZD41VHTDTtKgAz-dUpkZ324EPC9ZwIonb7Ul6aF4"
