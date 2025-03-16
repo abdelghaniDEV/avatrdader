@@ -37,7 +37,7 @@ export default function TradingInfo() {
         </Button>
       </div>
 
-      <div className="py-3 container mx-auto ">
+      <div className="py-3  px-4 sm:px-8 md:px-10 lg:px-20 mx-auto ">
         <h1 className="text-[24px] sm:text-[30px] font-[600]">{t("title")}</h1>
         <p className="text-[16px] sm:text-[18px] px-3">{t("text")}</p>
         <div className="flex flex-col gap-3 pt-7">

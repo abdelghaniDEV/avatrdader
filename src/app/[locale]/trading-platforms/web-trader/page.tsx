@@ -30,7 +30,7 @@ export default function WebTrader() {
       <div className="bg-[url(/bg-cfd.jpg)] bg-cover w-full h-[480px] md:h-[400px] lg:h-[480px]">
         <div className="flex  items-center justify-center pt-[40px] md:pt-[60px]  px-4 md:px-0">
           {/* Text Content */}
-          <div className="w-full md:w-[800px] flex flex-col items-center gap-4 text-white text-center container md:text-left">
+          <div className="w-full md:w-[800px] flex flex-col items-center gap-4 text-white text-center  px-4 sm:px-8 md:px-10 lg:px-20 md:text-left">
             {/* Heading */}
             <h1 className="text-[36px] leading-[40px] md:text-[50px] text-center md:leading-[50px] lg:text-[60px] lg:leading-[60px] font-[600]">
               <span className="text-main-bg">{t("web_trader")} </span> <br />
@@ -52,7 +52,7 @@ export default function WebTrader() {
         </div>
       </div>
       <div className="">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 pt-10 items-center">
+        <div className=" px-4 sm:px-8 md:px-10 lg:px-20 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 pt-10 items-center">
           <div  style={{
               textAlign: locale === "ar" ? "right" : "left",
             }} className="flex flex-col gap-4 text-center md:text-left">
@@ -78,7 +78,7 @@ export default function WebTrader() {
         </div>
       </div>
       <div className="bg-[#F3F3F3] my-8">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 py-10 items-center">
+        <div className=" px-4 sm:px-8 md:px-10 lg:px-20 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 py-10 items-center">
           <div className="w-full flex justify-center md:justify-end">
             <Image
               src={tradingview02}
@@ -104,7 +104,7 @@ export default function WebTrader() {
         </div>
       </div>
       <div className="">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 py-10 items-center">
+        <div className=" px-4 sm:px-8 md:px-10 lg:px-20 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 py-10 items-center">
           <div  style={{
               textAlign: locale === "ar" ? "right" : "left",
             }} className="flex flex-col gap-4 text-center md:text-left">
@@ -130,7 +130,7 @@ export default function WebTrader() {
         </div>
       </div>
       <div className="bg-[#F3F3F3] py-10">
-        <div className="container">
+        <div className=" px-4 sm:px-8 md:px-10 lg:px-20">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center">
             {t("features.title")}
           </h1>

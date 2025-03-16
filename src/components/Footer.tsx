@@ -20,7 +20,7 @@ export default function Footer() {
         <h2 className="text-center text-[30px] md:text-[40px] pb-3 font-[600]">
           Our Awards
         </h2>
-        <div className=" grid grid-cols-4  md:grid-cols-7 gap-5 container ">
+        <div className=" grid grid-cols-4  md:grid-cols-7 gap-5  px-4 sm:px-8 md:px-10 lg:px-20 ">
           <Image src={aword01} alt="aword1" />
           <Image src={aword02} alt="aword1" />
           <Image src={aword03} alt="aword1" />
@@ -30,7 +30,7 @@ export default function Footer() {
           <Image src={aword06} alt="aword1" />
         </div>
       </div>
-      <div className="bg-main-primary w-full  text-neutral-400  container py-10">
+      <div className="bg-main-primary w-full  text-neutral-400   px-4 sm:px-8 md:px-10 lg:px-20 py-10">
         <div className="flex flex-col lg:flex-row justify-between  gap-[20px] md:gap-[70px] pb-10">
           <div>
             <Image src={logo} alt="logo" className="w-[200px]" />

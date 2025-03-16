@@ -36,7 +36,7 @@ export default function Home() {
         <div className="flex  items-center  justify-start pt-[40px] md:pt-[60px]  md:px-0">
           {/* Text Content */}
           <div
-            className="w-full md:w-[700px] flex flex-col gap-4 text-white text-center container md:text-left"
+            className="w-full md:w-[700px] flex flex-col gap-4 text-white text-center  px-4 sm:px-8 md:px-10 lg:px-20 md:text-left"
             style={{
               textAlign: locale === "ar" ? "right" : "left",
             }}
@@ -63,14 +63,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div  className="bg-white py-6 md:py-10 my-10  container  md:px-0">
+      <div  className="bg-white py-6 md:py-10  my-10 px-4 sm:px-8 md:px-10 lg:px-20 ">
         {/* Heading */}
         <h1 className="text-center text-[24px] md:text-[30px] font-[600] pb-5">
           {t("markets_title")}
         </h1>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  ">
           <BoxFeta title={t("forex")} text={t("forex_desc")} />
           <BoxFeta title={t("indices")} text={t("indices_desc")} />
           <BoxFeta title={t("commodities")} text={t("commodities_desc")} />
@@ -81,7 +81,7 @@ export default function Home() {
       </div>
       <div   style={{
               textAlign: locale === "ar" ? "right" : "left",
-            }}  className="container grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-10 my-10 md:mb-20 ">
+            }}  className=" px-4 sm:px-8 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-10 my-10 md:mb-20 ">
         <div className="relative ">
           <Image
             src={imgHome01}
@@ -105,7 +105,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[url(/baner.webp)] bg-cover w-full h-[400px] container sm:h-[400px] md:h-[450px]">
+      <div className="bg-[url(/baner.webp)] bg-cover w-full h-[400px]  px-4 sm:px-8 md:px-10 lg:px-20 sm:h-[400px] md:h-[450px]">
         <div className="flex flex-col md:flex-row items-start justify-between pt-[30px] md:pt-[60px] ">
           {/* Left Section */}
           <div className="w-full md:w-[600px] flex flex-col gap-4 text-white">
@@ -139,7 +139,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-10 container px-4">
+      <div className="py-10  px-4 sm:px-8 md:px-10 lg:px-20 px-4">
         <div className="flex items-center justify-center flex-col">
           {/* Heading */}
           <h1 className="text-[24px] sm:text-[28px] md:text-[30px] font-[600] text-center">
@@ -154,7 +154,7 @@ export default function Home() {
           {/* Image Grid */}
         </div>
       </div>
-      <div className="bg w-full grid grid-cols-1 md:grid-cols-3 items-center bg-main-primary container text-white py-8 mb-10">
+      <div className="bg w-full grid grid-cols-1 md:grid-cols-3 items-center bg-main-primary  px-4 sm:px-8 md:px-10 lg:px-20 text-white py-8 mb-10">
         <h1 className="text-center text-[24px] md:text-[30px] leading-[24px] md:leading-[35px] font-[600] pb-5">
           {t("platform_title")} <br />
           <span className="text-main-bg">{t("platform_subtitle")}</span>
@@ -174,7 +174,7 @@ export default function Home() {
           <p className="text-center py-5 md:text-[20px]">
             {t("platform_text")}
           </p>
-          <div className="flex items-center justify-center gap-6 container">
+          <div className="flex items-center justify-center gap-6  px-4 sm:px-8 md:px-10 lg:px-20">
             <Button className="font-[550] h-11 w- md:w-auto text-[16px] bg-main-bg">
               {t("register_now")}
             </Button>

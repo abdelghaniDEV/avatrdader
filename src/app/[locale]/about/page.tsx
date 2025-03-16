@@ -30,7 +30,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="container pb-10">
+      <div className=" px-4 sm:px-8 md:px-10 lg:px-20 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div style={{
               textAlign: locale === "ar" ? "right" : "left",
@@ -53,7 +53,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
+      <div className=" px-4 sm:px-8 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         <div className="grid grid-cols-2 gap-6">
           {[
             {
@@ -98,7 +98,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 pt-10 items-center">
+      <div className=" px-4 sm:px-8 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-10 pt-10 items-center">
         <div style={{
               textAlign: locale === "ar" ? "right" : "left",
             }} className="flex flex-col gap-4 text-center md:text-left">
@@ -122,7 +122,7 @@ export default function About() {
       <div className="bg-gray-100 my-10 py-6">
         <div style={{
               textAlign: locale === "ar" ? "right" : "left",
-            }} className="container text-center md:text-left">
+            }} className=" px-4 sm:px-8 md:px-10 lg:px-20 text-center md:text-left">
           <h1 className="text-4xl font-bold">{t("section_four.title")}</h1>
           <p className="text-lg leading-relaxed">
              {t("section_four.text")}

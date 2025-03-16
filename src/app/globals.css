@@ -11,6 +11,11 @@ body {
   font-family: "Outfit", serif;
 }
 
+.container {
+  @apply  px-4 sm:px-8 md:px-10 lg:px-20
+}
+
+
 html[dir="rtl"] {
   direction: rtl !important;
   text-align: right !important;

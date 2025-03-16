@@ -37,7 +37,7 @@ export default function CfdTrading() {
             style={{
               textAlign: locale === "ar" ? "right" : "left",
             }}
-            className="w-full md:w-[800px] flex flex-col gap-4 text-white text-center container md:text-left"
+            className="w-full md:w-[800px] flex flex-col gap-4 text-white text-center  px-4 sm:px-8 md:px-10 lg:px-20 md:text-left"
           >
             {/* Heading */}
             <h1 className="text-[36px] leading-[40px] md:text-[50px] md:leading-[50px] lg:text-[60px] lg:leading-[60px] font-[600]">
@@ -60,7 +60,7 @@ export default function CfdTrading() {
         </div>
       </div>
       <div>
-        <div className="container mx-auto  grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 pt-10">
+        <div className=" px-4 sm:px-8 md:px-10 lg:px-20 mx-auto  grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 pt-10">
           <div className="flex flex-col gap-4">
             <h1 className="text-3xl md:text-[40px] font-bold">
               {t("cfd_trading_made_easy")}
@@ -89,7 +89,7 @@ export default function CfdTrading() {
           style={{
             textAlign: locale === "ar" ? "right" : "left",
           }}
-          className="container mx-auto py-6 flex flex-col items-center text-center lg:text-left"
+          className=" px-4 sm:px-8 md:px-10 lg:px-20 mx-auto py-6 flex flex-col items-center text-center lg:text-left"
         >
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             {t("why_choose_Al Ansari-Exchange")}
@@ -109,7 +109,7 @@ export default function CfdTrading() {
           style={{
             textAlign: locale === "ar" ? "right" : "left",
           }}
-          className="container py-6 flex flex-col gap-4 text-center "
+          className=" px-4 sm:px-8 md:px-10 lg:px-20 py-6 flex flex-col gap-4 text-center "
         >
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
             {t("benefits")}

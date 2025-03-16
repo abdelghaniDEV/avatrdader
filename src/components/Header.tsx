@@ -42,7 +42,7 @@ const ResponsiveNavbar = () => {
 
       {/* Header */}
       <div className="bg-main-primary py-1 text-white">
-        <div className="flex items-center justify-center md:justify-between container">
+        <div className="flex items-center justify-center md:justify-between  px-4 sm:px-8 md:px-10 lg:px-20">
           {/* Logo */}
           <Link href={"/"} className="w-[130px] md:w-[200px]">
             <Image src={Logo} alt="LOGO" className="object-cover" />
@@ -53,7 +53,7 @@ const ResponsiveNavbar = () => {
           <div className="hidden md:block">
             <ul className="flex items-center gap-2">
               <li>|</li>
-              <li>{t("help")}</li>
+              <li><Link href={'/contact'}>{t("help")}</Link></li>
               <li>|</li>
               <DropdownMenu>
                 <DropdownMenuTrigger className="focus:outline-none">
@@ -80,7 +80,7 @@ const ResponsiveNavbar = () => {
       </div>
 
       {/* Navigation and Buttons */}
-      <div className="container lg:flex items-center justify-between py-2 relative">
+      <div className=" px-4 sm:px-8 md:px-10 lg:px-20 lg:flex items-center justify-between py-2 relative">
         <Navbar />
         {/* Navigation Links */}
         <AnimatePresence>
@@ -199,12 +199,12 @@ const ResponsiveNavbar = () => {
         </AnimatePresence>
 
         {/* Login and Register Buttons */}
-        <div className="hidden  items-center gap-1">
-          <Button className="bg-inherit text-main-primary font-[600]">
-            {t("login")}
+        <div className="hidden md:block md:flex items-center gap-1">
+          <Button className=" font-[500] h-8 bg-inherit hover:bg-main-primary text-main-primary hover:text-white">
+            <Link href={"/login"}>{t("login")}</Link>
           </Button>
           <Button className="font-[500] h-8 bg-main-bg">
-            <span>{t("register")}</span>
+            <Link href={"/register"}>{t("register")}</Link>
           </Button>
         </div>
 

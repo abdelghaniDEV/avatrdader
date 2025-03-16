@@ -34,7 +34,7 @@ export default function Mt4() {
             style={{
               textAlign: locale === "ar" ? "right" : "left",
             }}
-            className="w-full md:w-[800px] flex flex-col gap-4 text-white text-center container md:text-left"
+            className="w-full md:w-[800px] flex flex-col gap-4 text-white text-center  px-4 sm:px-8 md:px-10 lg:px-20 md:text-left"
           >
             {/* Heading */}
             <h1 className="text-[36px] leading-[40px] md:text-[50px] md:leading-[50px] lg:text-[60px] lg:leading-[60px] font-[600]">
@@ -55,7 +55,7 @@ export default function Mt4() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container py-10 px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20  px-4 sm:px-8 md:px-10 lg:px-20 py-10 px-4 sm:px-6 lg:px-8">
         {/* Left Section */}
         <div className="flex flex-col gap-6">
           <h1 className="text-[24px] sm:text-[30px] font-[600]">

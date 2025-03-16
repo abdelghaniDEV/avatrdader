@@ -25,7 +25,7 @@ export default function Crypto() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-3 container py-6">
+      <div className="flex flex-col items-center justify-center gap-3  px-4 sm:px-8 md:px-10 lg:px-20 py-6">
         <div className="">
           <Image
             src={cryptoImg}
@@ -41,7 +41,7 @@ export default function Crypto() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 container ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10  px-4 sm:px-8 md:px-10 lg:px-20 ">
         <div className="flex flex-col gap-2">
           <h1 className="text-2xl md:text-3xl font-semibold">
             {t("section_one.title")}
@@ -63,7 +63,7 @@ export default function Crypto() {
         </div>
       </div>
 
-      <div className="bg-[#F3F3F3] my-10 container ">
+      <div className="bg-[#F3F3F3] my-10  px-4 sm:px-8 md:px-10 lg:px-20 ">
         <div className="flex flex-col items-center mx-auto pt-6">
           <h1 className="text-2xl md:text-4xl font-bold text-center mb-6">
           {t("section_two.title")}
