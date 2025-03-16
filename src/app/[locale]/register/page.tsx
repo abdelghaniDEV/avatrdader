@@ -40,7 +40,7 @@ export default function Register() {
     confirmPassword: "",
   });
 
-  const [errorServer, setErrorServer] = useState("");
+  // const [errorServer, setErrorServer] = useState("");
 
   const [country, setCountry] = useState<string>("");
 
@@ -160,11 +160,11 @@ export default function Register() {
             {t("title")}
           </h1>
           <p className="text-center py-4">{t("subtitle")}</p>
-          {errorServer && (
+          {/* {errorServer && (
             <p className="text-[15px] text-red-600 text-center absolute left-[50%] translate-x-[-50%]  ">
               {errorServer}
             </p>
-          )}
+          )} */}
           <form
             onSubmit={handelSubmit}
             className="flex flex-col gap-4 px-10 py-4  md:px-20 "
