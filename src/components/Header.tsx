@@ -222,10 +222,14 @@ const ResponsiveNavbar = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent className="mx-4">
                 <DropdownMenuItem className="font-[500] h-8 bg-main-bg cursor-pointer">
+                  <Link href={'/register'}>
                   {t("register")}
+                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="bg-inherit text-main-primary font-[600] cursor-pointer">
+                  <Link href={'/login'}>
                   {t("login")}
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
