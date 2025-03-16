@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/select";
 import { Label } from "./ui/label";
 import Image from "next/image";
-import { regesterData } from "@/app/[locale]/register/page";
 import { useTranslations } from "next-intl";
 
 type country = {

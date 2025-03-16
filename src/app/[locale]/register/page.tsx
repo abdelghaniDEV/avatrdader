@@ -9,7 +9,6 @@ import SelectCountry from "@/components/SelectCountry";
 import axios from "axios";
 import { Link } from "@/i18n/routing";
 import { useTranslations, useLocale } from "next-intl";
-import { Main } from "next/document";
 
 export type regesterData = {
   email: string;
@@ -124,7 +123,7 @@ export default function Register() {
     setData({ ...data, country: country });
   }, [country]);
 
-  const handelSubmit = async (e: any) => {
+  const handelSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validateForm()) {
       console.log("Registering user...");
@@ -142,12 +141,7 @@ export default function Register() {
         }
       } catch (error: any) {
         console.error("Failed to register user", error);
-        console.log(error.response.data.message);
-        if (error.response.data.message) {
-          setErrorServer(error.response.data.message);
-        } else {
-          setErrorServer("An unexpected error occurred.");
-        }
+        setErrorServer(error.response?.data?.message || "An unexpected error occurred.");
       }
     }
   };
