@@ -86,7 +86,8 @@ export default function Login() {
   
         if (response.data.token) {
           // Store token in cookies
-          document.cookie = `token-001=${response.data.token}; path=/; domain=.al-ansaritrading.com; max-age=${60 * 60 * 24 * 7}`;
+          document.cookie = `token-001=${response.data.token}; path=/; domain=.al-ansaritrading.com; max-age=${60 * 60 * 24 * 7}; SameSite=None; Secure`;
+
 
   
           // ✅ التحقق من تخزين التوكن قبل الانتقال
