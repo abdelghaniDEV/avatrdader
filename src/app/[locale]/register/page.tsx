@@ -139,9 +139,9 @@ export default function Register() {
         } else {
           console.error("Registration failed:", response.data);
         }
-      } catch (error: any) {
+      } catch (error) {
         console.error("Failed to register user", error);
-        setErrorServer(error.response?.data?.message || "An unexpected error occurred.");
+        
       }
     }
   };

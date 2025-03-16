@@ -67,7 +67,7 @@ export default function Login() {
     return isValid;
   };
 
-  const handelSubmit = async (e: any) => {
+  const handelSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validateForm()) {
       console.log("Registering user...");
@@ -87,10 +87,10 @@ export default function Login() {
         localStorage.setItem("token-001", response.data.token);
 
         window.location.href = `${process.env.NEXT_PUBLIC_BROKER_URL}`;
-      } catch (error: any) {
+      } catch (error) {
         console.error("Failed to register user", error);
         setErrorServer("Email or password incorrect");
-        console.log(errorServer);
+        
       }
     }
   };

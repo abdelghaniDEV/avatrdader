@@ -79,7 +79,7 @@ export default function Contact() {
     setData({...data , country : country})
   },[country])
 
-  const handelSubmit = async (e: any) => {
+  const handelSubmit = async ( e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (checkData()) {
       // Send form data to server
