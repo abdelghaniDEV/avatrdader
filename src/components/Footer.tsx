@@ -81,22 +81,16 @@ export default function Footer() {
             <div className="flex gap-2 mb-2 items-center">
               <Mail className="w-4 h-4" />
               <a
-                href="mailto:info@al-ansari.com"
-                className="text-gray-700 hover:text-blue-500 cursor-pointer"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=info@al-ansari.com"
+                className=""
               >
                 info@al-ansari.com
               </a>
             </div>
             <div className="flex gap-2 mb-2 items-center">
               <Phone className="w-4 h-4" />
-              <a
-                href="tel:+442045871782"
-                className="text-gray-700 hover:text-green-500 cursor-pointer"
-              >
-                +442045871782
-              </a>
+              <p className="">+442045871782</p>
             </div>
-
             <ul className="flex  gap-2 text-white items-center">
               <a
                 href="https://www.instagram.com/alansariexchange"
