@@ -84,15 +84,16 @@ export default function Login() {
           console.error("Login failed:", response.data);
         }
   
-        // تأكد من أن هناك توكن في الاستجابة
         if (response.data.token) {
-          await new Promise((resolve) => {
-            localStorage.setItem("token-001", response.data.token);
-            resolve(null);
-          });
+          localStorage.setItem("token-001", response.data.token);
   
-          console.log("Token saved:", localStorage.getItem("token-001"));
-          window.location.href = `${process.env.NEXT_PUBLIC_BROKER_URL}`;
+          // ✅ التحقق من تخزين التوكن قبل الانتقال
+          console.log("Token stored:", localStorage.getItem("token-001"));
+  
+          // ✅ انتظر لحظة قبل التوجيه للتأكد من أن `localStorage` قد تم تحديثه
+          setTimeout(() => {
+            window.location.href = `${process.env.NEXT_PUBLIC_BROKER_URL}`;
+          }, 500); // تأخير نصف ثانية
         } else {
           console.error("No token received");
         }
@@ -103,6 +104,7 @@ export default function Login() {
       }
     }
   };
+  
   
 
   return (
