@@ -80,14 +80,24 @@ export default function Footer() {
             <h4 className="pb-4 text-[20px] text-white">{t("contact")}</h4>
             <div className="flex gap-2 mb-2 items-center">
               <Mail className="w-4 h-4" />
-              <p className="">info@al-ansari.com</p>
+              <a
+                href="mailto:info@al-ansari.com"
+                className="text-gray-700 hover:text-blue-500 cursor-pointer"
+              >
+                info@al-ansari.com
+              </a>
             </div>
             <div className="flex gap-2 mb-2 items-center">
               <Phone className="w-4 h-4" />
-              <p className="">+442045871782</p>
+              <a
+                href="tel:+442045871782"
+                className="text-gray-700 hover:text-green-500 cursor-pointer"
+              >
+                +442045871782
+              </a>
             </div>
+
             <ul className="flex  gap-2 text-white items-center">
-              
               <a
                 href="https://www.instagram.com/alansariexchange"
                 className="bg-neutral-600 p-[5px] rounded-[10px] hover:bg-neutral-700 transition-colors"
@@ -110,9 +120,8 @@ export default function Footer() {
                 target="_blank" // لفتح الرابط في نافذة جديدة
                 rel="noopener noreferrer" // لتعزيز الأمان
               >
-                <Twitter  className="h-[20px] w-[20px] text-white" />
+                <Twitter className="h-[20px] w-[20px] text-white" />
               </a>
-              
             </ul>
           </div>
         </div>
