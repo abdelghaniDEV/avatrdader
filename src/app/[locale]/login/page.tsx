@@ -85,12 +85,13 @@ export default function Login() {
         }
   
         if (response.data.token) {
-          localStorage.setItem("token-001", response.data.token);
+          // Store token in cookies
+          document.cookie = `token-001=${response.data.token}; path=/; max-age=${60 * 60 * 24 * 7}`; // Expires in 7 days
   
           // ✅ التحقق من تخزين التوكن قبل الانتقال
-          console.log("Token stored:", localStorage.getItem("token-001"));
+          console.log("Token stored:", document.cookie);
   
-          // ✅ انتظر لحظة قبل التوجيه للتأكد من أن `localStorage` قد تم تحديثه
+          // ✅ انتظر لحظة قبل التوجيه للتأكد من أن `cookies` قد تم تحديثه
           setTimeout(() => {
             window.location.href = `${process.env.NEXT_PUBLIC_BROKER_URL}`;
           }, 500); // تأخير نصف ثانية
@@ -104,6 +105,7 @@ export default function Login() {
       }
     }
   };
+  
   
   
 
