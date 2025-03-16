@@ -70,30 +70,40 @@ export default function Login() {
   const handelSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log("Registering user...");
+      console.log("Logging in user...");
       console.log("Data before sending:", data);
-
+  
       try {
         const response = await axios.post(`${apiUrl}/auth/login`, data, {
           headers: { "Content-Type": "application/json" },
         });
-
+  
         if (response.status === 201 || response.status === 200) {
-          console.log("User registered successfully:", response.data);
+          console.log("User logged in successfully:", response.data);
         } else {
-          console.error("Registration failed:", response.data);
+          console.error("Login failed:", response.data);
         }
-
-        localStorage.setItem("token-001", response.data.token);
-
-        window.location.href = `${process.env.NEXT_PUBLIC_BROKER_URL}`;
-      } catch (error) {
-        console.error("Failed to register user", error);
-        setErrorServer("Email or password incorrect");
+  
+        // تأكد من أن هناك توكن في الاستجابة
+        if (response.data.token) {
+          await new Promise((resolve) => {
+            localStorage.setItem("token-001", response.data.token);
+            resolve(null);
+          });
+  
+          console.log("Token saved:", localStorage.getItem("token-001"));
+          window.location.href = `${process.env.NEXT_PUBLIC_BROKER_URL}`;
+        } else {
+          console.error("No token received");
+        }
         
+      } catch (error) {
+        console.error("Failed to log in user", error);
+        setErrorServer("Email or password incorrect");
       }
     }
   };
+  
 
   return (
     <div className="md:pl-10 border-t-[1px]">
